@@ -1,4 +1,4 @@
-# 🚀 Curso Desenvolvimento Web Moderno com JavaScript COMPLETO + Projetos
+# 🚀 Curso Desenvolvimento Web Moderno com JavaScript COMPLETO + Projetos ## Revisão ## 
 
 Seja muito bem-vindo ao **Curso Desenvolvimento Web Moderno com JavaScript!** Um dos cursos mais completos do mercado, com quase **600 aulas**, **33 capítulos** e mais de **85 horas de conteúdo**, cobrindo tudo o que você precisa saber para se tornar um **Desenvolvedor Web Fullstack** do zero ao avançado.
 
