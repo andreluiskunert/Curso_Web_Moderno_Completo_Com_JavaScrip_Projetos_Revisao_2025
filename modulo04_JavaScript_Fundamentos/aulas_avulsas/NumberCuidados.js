@@ -2,6 +2,8 @@ console.log("Number:Alguns Cuidados ")
 console.log("Explica sobre Alguns Cuidados...")
 console.log("Ex.:")
 console.log(7  / 0)
+console.log('3' + 2) // Concatenou junto
+console.log('3' - 2)
 console.log("10" / 2 )
 console.log("show" * 2 )
 console.log(0.1 + 0.7)
