@@ -1,0 +1,7 @@
+console.log('Visão Geral')
+console.log('Explica sobre a importância do Node....')
+console.log('Esse capítulo apresenta o Node.js, ambiente que revolucionou o JavaScript ao permitir sua execução também no servidor (back-end), não apenas no navegador.')
+console.log('Ele utiliza a engine V8 do Google e a libuv, que gerencia operações assíncronas de entrada/saída.')
+console.log('Diferente de servidores como o Apache, o Node adota um modelo single-thread, event loop e workers, garantindo alta performance e baixo consumo de memória em aplicações com muitas conexões.')
+console.log('Assim, com Node.js é possível desenvolver sistemas completos em JavaScript, unificando front-end e back-end.')
+console.log('The End')
