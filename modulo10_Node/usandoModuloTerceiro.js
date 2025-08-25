@@ -1,0 +1,5 @@
+console.log(' Usando Modulos de Terceiros ')
+console.log('§ Explica dando exemplo..')
+const _ = require('lodash')
+setInterval(() => console.log(_.random(50, 1500)), 2000)
+console.log('')
