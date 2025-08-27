@@ -1,0 +1,224 @@
+
+Pessoal nessa aula vamos falar rapidamente sobre um conceito importante que diz respeito diretamente
+
+com o.
+
+Mas o conceito de free mo em breve que eu acho que um ou duas aulas eu vou fazer um pequeno exemplo
+
+usando um framework web para a noite chamado Express.
+
+é um framework que vai te possibilitar criar por exemplo aplicações para fazer os teus Web Services
+
+da aplicação em saber que uma aplicação web é algo que eu ainda vou trabalhar em cima de um capítulo
+
+completo.
+
+Logo depois desse capítulo também preciso começar especificamente a parte de web e eu vou comentar com
+
+vocês nessa nesse capítulo especificamente web.
+
+Vários conceitos extremamente importantes para trabalhar com aplicações web até aqui está trabalhando
+
+muito com a linguagem Javascript puro a gente tá vendo as estruturas de controle vendo funções objetos.
+
+E tudo a parte Fundamentos da Linguagem para construir uma base sólida da linguagem JavaScript para
+
+em breve a gente começa a trabalhar com conceitos mais relacionados à web.
+
+Então aí está chegando mais nessa parte e só aqui nesse capítulo de novo como algo muito presente dentro
+
+do novo trabalhar com web eu vou fazer um exemplo bem simples trazendo um framework web que se preze
+
+pra gente ver um pouquinho do funcionamento dele e fazer um pequeno exercício em um pequeno projétil
+
+para simular a construção de um observe se é usando esse processo pra isso a gente vai falar de um framework
+
+web a gente tem hoje uma divisão muito claro que eu ainda vou trabalhar isso não vejo uma forma bem
+
+tranquilamente ao usar explicada que é a divisão onde você tem um código que roda no servidor colhe
+
+o back end e tem um código que é interpretado pelo Brasil o Brasil interpreta o JavaScript nativamente.
+
+Então lá no Brasil você pode rodar sua aplicação do lado cliente executando Java Script.
+
+Lá você pode executar no Mac.
+
+Eu já falei para vocês está trabalhando esse conceito do o Windows também tem dentro dele o V8 que é
+
+o mesmo interpretador de JavaScript que roda no Chrome e você consegue rodar código em JavaScript no
+
+Mac pra construir toda a sua aplicação.
+
+Do lado do servidor por exemplo percebe se que seria uma excelente pedida para algo web que é muito
+
+mais do que gerar conteúdo dinâmico a partir da geração aquela geração antiga era baseada em linguagem
+
+serve mas vamos lá eu quero falar pra você na sala porque do conceito de Fremont.
+
+Você tem bibliotecas como é o caso que nós usamos o exemplo do Low 10 nós fizemos aqui na parte de módulos
+
+aqui usando módulos de terceiros e nós usamos o deixe o deixe.
+
+Ele é conhecido como biblioteca assim como aqueles que nós usamos também é uma biblioteca porque ele
+
+está pronta.
+
+Conjunto de funcionalidades e funções prontas para serem usadas.
+
+Diferente de um frame informou que ele é algo que estrutura a sua aplicação que dá uma boa base e um
+
+arcabouço que seria a tradução para português e um arcabouço ele dar da estrutura para aquilo ali era
+
+caríssimo.
+
+Aquela futuro você consegue desenvolver auto aplicação seguindo a arquitetura seguindo os preceitos
+
+ou mesmo as configurações que aquele framework estabelece.
+
+Então você tem por exemplo o Angola como um framework.
+
+Você tem de começar uma biblioteca você tem o vinho o dia s como sendo um feriado que vai orquestrar
+
+quem vai organizar sua aplicação inteira então você tem essa diferença entre biblioteca afirmou que
+
+o Express que é o que nós vamos usá la na aula seguinte seguindo depois para gente de pequeno projétil
+
+ele é um framework que vai te ajudar a construir os teus Web Services.
+
+Do lado do BQ você tem Free front end frameworks que vão trabalhar com a parte gráfica do teu projeto.
+
+Vão trabalhar com a parte do cliente das páginas e tudo aquilo que vai ser idealizado no Brasil.
+
+Você também tem um frame do back end que vai te ajudar a por exemplo a mapear o banco de dados que vai
+
+te ajudar por exemplo a persistir os dados do banco de dados e tem frameworks de persistência.
+
+Você tem informou que se vai te da parte mais a parte da web de criação e web services.
+
+Você tem frameworks como é o Graph que ela vai te dar outra visão de como construir isso.
+
+Então você tem uma infinidade de frameworks você pode trabalhar com extremo ou em conjunto.
+
+é importante você entender esse conceito freemium que é algo que você constrói a sua aplicação em cima
+
+dele inclusive fazendo configurações às vezes tem uns que têm mais configurações menos configurações
+
+mas ele vai te dar estrutura básica para fazer a tua aplicação ou pelo menos uma parte da tua aplicação.
+
+Por exemplo um framework que vai te ajudar a salvar os dados no banco de dados ele não obrigatoriamente
+
+vai reger a tua aplicação inteira mas a parte de persistência.
+
+Mas amizade vai ser rígida em cima daquele filme persistência tá certo.
+
+Então não obrigatoriamente você precisa usar apenas um único frame ou você pode usar um conjunto informou
+
+que mais um frame que é diferente de uma biblioteca uma coisa você tem um longo desta vida que é simplesmente
+
+um conjunto de funcionalidades para te ajudar no dia a dia na programação.
+
+Outra coisa é você ter um cliente HTTP como acho que vai simplesmente te dar funcionalidades para fazer
+
+chamadas remotas e obter respostas.
+
+Outra coisa é ter o Expresso por exemplo que ele vai organizar a aplicação de uma forma muito mais abrangente.
+
+Então é isso que eu queria só trazer para você essa diferença de frame que e biblioteca só para complementar
+
+um pouco conteúdo da aula eu separei aqui três abas.
+
+São três frameworks só para você ter ideia a quantidade e afirmou que existe a galera brinca muito dizendo
+
+que surge frameworks JavaScript toda semana todo dia certo.
+
+Aqui você tem três exemplos existem mais exemplos para isso e frameworks que rodam no lado B aqueles
+
+que rodam no lado do servidor.
+
+Esses três são alternativas pra você construir Web Services usando o Now.
+
+Você tem um expresso que é muito conhecido bastante usado que é um framework para a nuvem que ele chama
+
+de um framework minimalista para construir aplicações para a web e não apenas para construir Web Services
+
+mas é muito usado nesse sentido também.
+
+Você tem aqui um outro exemplo o seu ponto Jazz que também é um framework web para você construir aplicações
+
+usando o nome.
+
+Ele tem mais coisas.
+
+Ele não é tão minimalista como o Express ele tem a parte de acesso ao banco de dados criação de APIs
+
+Web e várias coisas interessantes a partir de web só que ele também traz integração.
+
+Então o que também é uma alternativa interessante tem esse conceito.
+
+Também é uma alternativa super moderna para você trabalhar com aplicações web site e para criar certas
+
+coisas do tipo.
+
+Ele mostra aqui também todas as suas códigos e configurações.
+
+Como é que você faz para usar ele em produção aqui são só três exemplos de frameworks web que você pode
+
+usar para a noite do lado B aqui fora os tremores que você já deve ter ouvido falar o conhecem e aqui
+
+o viu.
+
+O angolano tem muitos outros formou inclusive se for olhar.
+
+Tecnicamente falando o pessoal disse que aqui não é um frame que uma biblioteca pra trabalhar com a
+
+parte de componentes.
+
+Eu concordo com isso mas só pra dizer a quantidade de possibilidades que você tem pra trabalhar tanto
+
+no lado do franchise como no lado B.
+
+Na próxima aula vou mostrar um pouquinho pra vocês um padrão de projeto é até legal porque na próxima
+
+hora eu vou conseguir baixar pra vocês a implementação de um grande projeto que é um padrão extremamente
+
+importante.
+
+Eu diria nesse mundo do de não só do nome de mais aplicações como web como tudo que é o padrão tem responsabilidade
+
+cadê a responsabilidade.
+
+Vou falar sobre esse padrão na próxima aula.
+
+Por quê.
+
+Porque o Express é altamente baseado nesse padrão não só que se preze mais vários frameworks web se
+
+baseiam nesse padrão então entender esse padrão é interessante para quem você tem um pouco da arquitetura
+
+desse frame ou o que que nós vamos usar nesse para o jeitinho mais lá na frente com certeza vou acabar
+
+usando ele em outras situações.
+
+Mas é legal trazer pra vocês não só mostrar como fêmur funciona mais baixar também os porquês e qual
+
+o padrão principal que se formou que se baseia tão legal na próxima aula.
+
+Vou mostrar para vocês isso.
+
+Nós vamos implementar um padrão em JavaScript que o Tim oferece mensalmente.
+
+Ainda estamos no capítulo de hoje porque esse framework que eu quero usar pra você para fazer esse pequeno
+
+jeitinho é um termo muito usado em nome de uma fórmula muito usada para construir aplicações back end.
+
+Uso muito Portas também tem um pouco de conhecimento não só dos módulos que vêm já com o nome não só
+
+um pouco do funcionamento do novo sistema de módulos global com função nudez e coisas que a gente já
+
+viu ou entender como funcionam os módulos que já vêm com o nome mas também entender esses padrões de
+
+mercado.
+
+No caso aqui por exemplo que se preza é um deles e por isso eu fiz questão de mostrar a ele dentro do
+
+capítulo de novos.
