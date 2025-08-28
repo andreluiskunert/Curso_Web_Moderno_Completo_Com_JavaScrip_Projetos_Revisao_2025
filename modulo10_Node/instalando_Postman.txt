@@ -1,0 +1,67 @@
+Pessoal nós vamos agora começar um pequeno projeto para fazer um API bem simples mostrando como você
+
+pode fazer uma requisição pelo Brasil ou mesmo pelo posto que eu vou mostrar pra vocês como está lá
+
+é você fazer dar uma resposta usando isso que é o princípio de um app aí o resto a gente não vai entrar
+
+fundo no tema da API mas eu vou mostrar pra vocês o se vou mostrar pra você como a gente fazer um banco
+
+em memória não exatamente um banco de memória não é isso.
+
+Na verdade eu vou criar um objeto dentro desse objeto a gente vai ter os nossos elementos que vai ser
+
+uma lista de produtos a gente vai fingir que está trabalhando ali numa API acho que é algo muito importante
+
+na aplicação você tem Apache no front em suas páginas que você usa muito JavaScript hoje de várias formas
+
+diferentes frameworks diferentes mas também do lado B aqui você trabalha com JavaScript é uma das soluções
+
+mais populares hoje é você trabalhar com esse primor aqui e que se preza e que se preze mais essa gente
+
+propriamente implementar isso o nosso pequeno jeitinho.
+
+Queria que vocês instalassem o medo e o pulso.
+
+Ele é uma forma de você conseguir fazer requisições de uma forma mais flexível.
+
+Quando você abre o Brasil e digita por exemplo www ponto Google.com br você está fazendo uma requisição
+
+tipo bate certo eu vou falar sobre isso o metro HTTP tem vários tipos de requisição só que para a gente
+
+testar nossa API testar o JavaScript do lado do B aqui.
+
+A gente vai precisar fazer aquisições tipo Bad Push então teu post é muito interessante para você testar
+
+a sua aplicação e as diversas formas diferentes de fazer requisição.
+
+Então eu estou aqui no Mac então vou clicar aqui para baixar um Mac.
+
+Você pode baixar no Windows tanto a versão de 32 64 ou no Linux aqui versão 32 64.
+
+Então você vai escolher a sua plataforma.
+
+Acredito que a instalação seja bem simples já faz um tempo que eu não está lá.
+
+Por isso mesmo no caso aqui ele baixou a tela compactada propagou por cima eu vou jogar aqui pra dentro
+
+application x abri Application
+
+vou dizer para ele abri no caso do Windows.
+
+Ele provavelmente vai ser um certo tranquilo eu acho que não vai ter dificuldade nenhuma uma vez que
+
+você vai pedir pra você se logar mas eu quero ter comigo diretamente e me leve diretamente para a aplicação.
+
+Eu crio uma conta depois clicando aqui você vai ter feito para não mostrar isso aqui.
+
+Eu tenho uma ideia aqui é minha disposição para fazer algum tipo de requisição e aqui a gente vai mexer
+
+um pouquinho nele para que a gente possa testar o nosso projeto na próxima aula a gente continua começando
+
+a fazer o nosso projeto e é interessante que você tenha o Pochmann instalado para que a gente possa
+
+testar mais na frente da câmera construí.
+
+E quando a gente for fazer os nossos primeiros testes vocês vão e nós vamos usar ele para testar e está
+
+tudo funcionando.
