@@ -1,0 +1,63 @@
+consoleSó a partir da próxima aula vamos revisar e aprofundar um pouco mais tanto o tema de Palmas como o tema
+
+de assim.
+
+Eu não tinha gravado essas aulas originalmente no curso moderno e resolvi acrescentar mais aulas sobre
+
+esses dois temas por se tratar de temas muito importantes que a gente vai usar de uma forma muito frequente
+
+no dia a dia.
+
+Então a partir da próxima aula percebi que a estrutura de pastas e arquivos mudam um pouco porque essas
+
+aulas que vou mostrar a partir da próxima até o final do capítulo são aulas extraídas do curso de JavaScript
+
+funcional.
+
+Lá eu aprofundem mais homens sobre a cinquentinha então você pode continuar escrevendo os códigos dentro
+
+dessa pasta cinético como se estivesse continuando o curso é moderno o que os exercícios fazem complexo
+
+sentido também serem feito.
+
+O curso é moderno e então continuei usando essa pasta sem nexo independente no próximo vídeo.
+
+Está utilizando a estrutura de pastas diferentes.
+
+Lá eu coloquei dentro desse capítulo de funções mas você pode colocar os mesmos exercícios dentro da
+
+pasta e se mexe tem uma única observação todo o resto vai funcionar perfeitamente.
+
+Se eventualmente eu fizer alguma menção ao outro capítulo sabe que eu estarei falando do curso de JavaScript
+
+funcional e não do curso moderno.
+
+Isso vai servir pra todas essas aulas ou para o Messi um dois três desafio para homens.
+
+Resposta para o Messi 4 Messi 5 a 51 e 52.
+
+Então essas foram as aulas extraídas do curso de JavaScript funcional.
+
+Uma observação só vai perceber que existe um arquivo chamado dados ponto txt.
+
+Esse arquivo será usado dentro do desafio para homens e desafio para uma resposta só que é um arquivo
+
+Super Simples basta você criar um arquivo chamado dados ponto TXT coloca a Linha 1 Linha 2 e Linha 3.
+
+é basicamente o mais importante é a leitura do arquivo e entender também como integrar isso compromisso
+
+é exatamente isso que eu vou lançar um desafio mostrar para vocês aqui no vídeo a resposta legal então
+
+só para ficar claro que eu fiz questão de colocar essas aulas porque eu acho que é importante aprofundar
+
+um pouco mais tanto na parte para homens como na pasta e assim caliente.
+
+Mas esses vídeos foram extraídos do curso de JavaScript funcional.
+
+Então por isso vai ter um pouco de diferença na estrutura de pastas.
+
+E com relação ao arquivo dados TXT você cria um arquivo o mesmo nome e coloca as três linhas Linha 1
+
+Linha 2 Linha 3 você vai conseguir executar todos os exercícios até o final.
+
+Então isso é até para os mal.
