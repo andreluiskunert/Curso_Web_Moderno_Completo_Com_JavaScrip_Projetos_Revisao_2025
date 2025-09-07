@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Conceitos Fundamentais da Web – Resumo</title>
+  <meta name="description" content="Resumo claro e acessível sobre história da internet, topologia, pilha TCP/IP, endereços IP e portas." />
+  <style>
+    :root {
+      --bg: #f7fbff;
+      --surface: #ffffff;
+      --text: #0f172a;     /* slate-900 */
+      --muted: #475569;    /* slate-600 */
+      --accent: #3b82f6;   /* blue-500 */
+      --accent-weak: #dbeafe; /* blue-100 */
+      --ring: #60a5fa;     /* blue-400 */
+      --code: #0b1020;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1020;
+        --surface: #0f172a;
+        --text: #eef2ff;
+        --muted: #94a3b8;
+        --accent: #60a5fa;
+        --accent-weak: #172554;
+        --ring: #3b82f6;
+        --code: #e2e8f0;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 600px at 20% -10%, var(--accent-weak), transparent),
+                  radial-gradient(1200px 600px at 120% 10%, var(--accent-weak), transparent),
+                  var(--bg);
+    }
+
+    .container {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: saturate(1.2) blur(10px);
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      border-bottom: 1px solid color-mix(in srgb, var(--accent), transparent 80%);
+    }
+
+    header .wrap {
+      max-width: 940px;
+      margin: 0 auto;
+      padding: 0.8rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: space-between;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand .logo {
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), color-mix(in srgb, var(--accent), #fff 30%));
+      box-shadow: 0 10px 25px -10px color-mix(in srgb, var(--accent), transparent 30%);
+      display: grid; place-items: center;
+      color: #fff; font-weight: 700;
+      letter-spacing: .5px;
+    }
+
+    h1 { font-size: clamp(1.6rem, 2.5vw + 1rem, 2.4rem); margin: 0; }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      padding: .5rem .8rem;
+      border-radius: 8px;
+    }
+    nav a:focus-visible, nav a:hover {
+      outline: none;
+      background: color-mix(in srgb, var(--accent), transparent 85%);
+    }
+
+    .hero {
+      margin-top: 2rem;
+      background: var(--surface);
+      border: 1px solid color-mix(in srgb, var(--accent), transparent 85%);
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px -20px color-mix(in srgb, var(--accent), transparent 70%);
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: clamp(1.2rem, 1.2vw + 1rem, 1.6rem);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    section.card {
+      background: var(--surface);
+      border: 1px solid color-mix(in srgb, var(--accent), transparent 85%);
+      border-radius: 18px;
+      padding: 1.2rem 1.2rem 1rem;
+      box-shadow: 0 12px 30px -24px color-mix(in srgb, var(--accent), transparent 70%);
+    }
+
+    section.card h3 { margin: 0 0 .5rem; }
+    p { margin: .4rem 0; }
+    ul { margin: .4rem 0 .8rem 1.1rem; }
+
+    .tag {
+      display: inline-block;
+      font-size: .85rem;
+      padding: .2rem .55rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--accent), transparent 85%);
+      border: 1px solid color-mix(in srgb, var(--accent), transparent 70%);
+      color: var(--muted);
+      margin-bottom: .6rem;
+    }
+
+    .kbd {
+      font: 600 .9rem ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: color-mix(in srgb, var(--accent-weak), transparent 60%);
+      border: 1px solid color-mix(in srgb, var(--accent), transparent 70%);
+      padding: .1rem .35rem;
+      border-radius: .4rem;
+      color: var(--code);
+    }
+
+    .note {
+      border-left: 4px solid var(--accent);
+      padding: .75rem 1rem;
+      background: color-mix(in srgb, var(--accent-weak), transparent 70%);
+      border-radius: 10px;
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: var(--muted);
+      font-size: .95rem;
+      text-align: center;
+    }
+
+    /* Acessibilidade */
+    :focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; border-radius: 8px; }
+    a { color: var(--accent); }
+    a:hover { text-decoration: underline; }
+
+    .skip-link {
+      position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip-link:focus { left: 1rem; top: 1rem; width: auto; height: auto; padding: .5rem .75rem; background: var(--surface); border: 2px solid var(--ring); border-radius: .5rem; z-index: 1000; }
+
+    @media print {
+      header { position: static; backdrop-filter: none; }
+      body { background: #fff; }
+      .hero, section.card { box-shadow: none; }
+      .container { padding: 0; }
+      nav { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header role="banner">
+    <div class="wrap" aria-label="Cabeçalho do documento">
+      <a class="brand" href="#conteudo">
+        <div class="logo" aria-hidden="true">WEB</div>
+        <h1>Conceitos Fundamentais da Web</h1>
+      </a>
+      <nav aria-label="Seções">
+        <a href="#historia">História</a>
+        <a href="#topologia">Topologia</a>
+        <a href="#pilha">Pilha TCP/IP</a>
+        <a href="#ip">Endereço IP</a>
+        <a href="#portas">Portas</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container" role="main">
+    <section class="hero" aria-label="Resumo">
+      <h2>Visão Geral</h2>
+      <p>Este resumo apresenta os pilares da web: um pouco de história, como a internet é organizada, a <strong>pilha TCP/IP</strong>, a <strong>anatomia do IP</strong> e o papel das <strong>portas</strong> na comunicação entre processos.</p>
+      <p class="note">Dica: dominar estes conceitos deixa o desenvolvimento web (HTML, CSS, JavaScript e além) mais previsível e seguro.</p>
+    </section>
+
+    <div class="grid" role="list">
+      <section id="historia" class="card" role="listitem">
+        <span class="tag">🌍 História</span>
+        <h3>Breve História da Internet</h3>
+        <ul>
+          <li><strong>Anos 60</strong>: <abbr title="Advanced Research Projects Agency Network">ARPANET</abbr>, primeira rede entre universidades dos EUA.</li>
+          <li><strong>Anos 70</strong>: Surge o padrão <strong>TCP/IP</strong>, base da internet.</li>
+          <li><strong>Anos 80</strong>: Tim Berners-Lee cria a <strong>World Wide Web (WWW)</strong>.</li>
+          <li><strong>Anos 90</strong>: Internet populariza no Brasil (conexão discada).</li>
+        </ul>
+      </section>
+
+      <section id="topologia" class="card" role="listitem">
+        <span class="tag">🕸️ Topologia</span>
+        <h3>Internet como Rede Distribuída</h3>
+        <p>A internet não tem controle central único; é <strong>distribuída</strong>. Falhas locais raramente derrubam tudo, pois existem <strong>rotas alternativas</strong>.</p>
+        <p>O tráfego cruza provedores de <strong>nível 1, 2 e 3</strong> e, quando necessário, <strong>cabos submarinos</strong> conectando continentes.</p>
+      </section>
+
+      <section id="pilha" class="card" role="listitem">
+        <span class="tag">📡 Pilha TCP/IP</span>
+        <h3>Camadas e Responsabilidades</h3>
+        <ul>
+          <li><strong>Física</strong>: meios (Wi‑Fi, cabo, fibra), sinais, MAC.</li>
+          <li><strong>Internet</strong>: <strong>IP</strong> e roteamento entre redes.</li>
+          <li><strong>Transporte</strong>: <strong>TCP</strong> (confiável, orientado à conexão) e <strong>UDP</strong> (leve, melhor esforço).</li>
+          <li><strong>Aplicação</strong>: <abbr title="HyperText Transfer Protocol">HTTP</abbr>, <abbr title="File Transfer Protocol">FTP</abbr>, <abbr title="Simple Mail Transfer Protocol">SMTP</abbr>, <abbr title="Domain Name System">DNS</abbr>…</li>
+        </ul>
+        <p><span class="kbd">TCP</span> para confiabilidade; <span class="kbd">UDP</span> para baixa latência (streaming, jogos).</p>
+      </section>
+
+      <section id="ip" class="card" role="listitem">
+        <span class="tag">🔢 Endereço IP</span>
+        <h3>IPv4, Máscara e Classes</h3>
+        <p>O IP é dividido em <strong>rede</strong> e <strong>host</strong> pela <strong>máscara de sub-rede</strong>. Exemplos clássicos:</p>
+        <ul>
+          <li><strong>Classe A</strong>: poucas redes, muitas máquinas.</li>
+          <li><strong>Classe B</strong>: equilíbrio redes × máquinas.</li>
+          <li><strong>Classe C</strong>: muitas redes, poucas máquinas (comum).</li>
+        </ul>
+        <p>O <strong>IPv6</strong> amplia o espaço de endereços, mas o <strong>IPv4</strong> ainda é onipresente.</p>
+      </section>
+
+      <section id="portas" class="card" role="listitem">
+        <span class="tag">🔌 Portas</span>
+        <h3>IP identifica máquina, porta identifica processo</h3>
+        <p>Portas permitem comunicação <strong>processo a processo</strong>. Exemplos comuns:</p>
+        <ul>
+          <li><strong>80</strong>: HTTP</li>
+          <li><strong>443</strong>: HTTPS</li>
+          <li><strong>3306</strong>: MySQL</li>
+        </ul>
+        <p>Em desenvolvimento é comum rodar serviços em portas como <span class="kbd">3000</span>, <span class="kbd">5173</span>, <span class="kbd">8080</span>.</p>
+      </section>
+    </div>
+
+    <section class="hero" aria-label="Conclusão">
+      <h2>Conclusão</h2>
+      <p>A web se apoia na pilha <strong>TCP/IP</strong>, endereços <strong>IP</strong> e <strong>portas</strong>, operando numa infraestrutura global distribuída. Entender isso torna o desenvolvimento mais eficiente, seguro e escalável.</p>
+    </section>
+
+    <footer role="contentinfo">
+      <p>Feito para estudo • Pode copiar e adaptar livremente.</p>
+    </footer>
+  </main>
+</body>
+</html>
