@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo: Protocolo HTTP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fb;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      background: #0073e6;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      margin-top: 20px;
+      color: #0073e6;
+    }
+    .box {
+      background: #fff;
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 5px solid #0073e6;
+      border-radius: 6px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resumo do Protocolo HTTP</h1>
+    <p>Protocolo de Transferência de Hipertexto</p>
+  </header>
+
+  <section class="box">
+    <h2>O que é HTTP?</h2>
+    <p>
+      O <strong>HTTP</strong> (Hypertext Transfer Protocol) é um protocolo da camada de aplicação usado na web para
+      comunicação entre <strong>cliente</strong> (navegador) e <strong>servidor</strong>.  
+      Originalmente foi criado para transferir hipertextos (documentos HTML com links), mas hoje suporta
+      imagens, vídeos, áudios, jogos e muito mais.
+    </p>
+  </section>
+
+  <section class="box">
+    <h2>Características principais</h2>
+    <ul>
+      <li><strong>Camada:</strong> Funciona na camada de aplicação da pilha TCP/IP.</li>
+      <li><strong>Sem estado (stateless):</strong> Cada requisição é independente. Sessões são geridas pela aplicação.</li>
+      <li><strong>Cliente-Servidor:</strong> O cliente faz requisições e o servidor responde.</li>
+      <li><strong>Baseado em requisição/resposta:</strong> Cliente envia a <em>request</em> e recebe uma <em>response</em>.</li>
+    </ul>
+  </section>
+
+  <section class="box">
+    <h2>Métodos HTTP</h2>
+    <ul>
+      <li><strong>GET:</strong> Recupera informações (parâmetros vão na URL).</li>
+      <li><strong>POST:</strong> Envia dados no corpo da requisição (ex.: formulários).</li>
+      <li>PUT, DELETE, PATCH, OPTIONS, CONNECT, HEAD também existem e são usados em APIs.</li>
+    </ul>
+  </section>
+
+  <section class="box">
+    <h2>Status de Resposta</h2>
+    <ul>
+      <li><strong>1xx:</strong> Informativo</li>
+      <li><strong>2xx:</strong> Sucesso (200 OK)</li>
+      <li><strong>3xx:</strong> Redirecionamento (301, 302...)</li>
+      <li><strong>4xx:</strong> Erros do cliente (404 Not Found)</li>
+      <li><strong>5xx:</strong> Erros do servidor (500 Internal Server Error)</li>
+    </ul>
+  </section>
+
+  <section class="box">
+    <h2>HTTP x HTTPS</h2>
+    <p>
+      O <strong>HTTPS</strong> é a versão segura do HTTP. Ele usa criptografia (SSL/TLS) para proteger os dados,
+      evitando que informações sensíveis (como senhas) sejam interceptadas por terceiros.
+    </p>
+  </section>
+
+  <footer>
+    <p>Resumo didático sobre HTTP © 2025</p>
+  </footer>
+</body>
+</html>
