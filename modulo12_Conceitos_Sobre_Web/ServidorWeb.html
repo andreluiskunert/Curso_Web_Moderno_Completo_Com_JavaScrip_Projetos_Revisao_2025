@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo - Servidores Web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f5f8fa;
+      color: #333;
+    }
+    h1, h2 {
+      color: #0056a6;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .box {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Resumo: Servidores Web</h1>
+
+  <div class="box">
+    <h2>O que é um Servidor Web?</h2>
+    <p>É um software que recebe requisições HTTP e retorna respostas, como páginas HTML, CSS, imagens e dados dinâmicos.</p>
+    <ul>
+      <li><b>Exemplos:</b> Apache, Nginx, Tomcat, Node.js (Express), Spring Boot.</li>
+      <li>Pode servir <b>conteúdo estático</b> (imagens, CSS, JS) ou <b>dinâmico</b> (gerado por linguagens como PHP, Java, Node.js).</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Estratégias de Processamento</h2>
+    <ul>
+      <li><b>Apache:</b> abre múltiplas threads, uma para cada requisição.</li>
+      <li><b>Nginx:</b> trabalha de forma assíncrona, usando poucas threads.</li>
+      <li><b>Node.js:</b> utiliza um loop de eventos com processamento assíncrono.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>DNS (Domain Name System)</h2>
+    <p>Responsável por traduzir um domínio (ex: www.exemplo.com) para um endereço IP do servidor.</p>
+    <ul>
+      <li>Configuração feita em serviços como <b>Registro BR</b> ou provedores externos.</li>
+      <li>Propagação de alterações pode levar de 24h a 48h.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Hospedagem e Escalabilidade</h2>
+    <ul>
+      <li>Um servidor pode atender <b>múltiplos sites</b> via <i>virtual hosts</i>.</li>
+      <li>Sites grandes utilizam <b>balanceamento de carga</b> e <b>clusters</b>.</li>
+      <li>Conteúdo estático pode ser entregue via <b>CDN</b> para maior performance.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Pilha de Servidores</h2>
+    <p>Muitas vezes o servidor web é parte de um conjunto maior:</p>
+    <ul>
+      <li><b>LAMP:</b> Linux + Apache + MySQL + PHP</li>
+      <li><b>XAMPP/MAMP/WAMP:</b> Pacotes que instalam tudo junto.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Portas de Comunicação</h2>
+    <ul>
+      <li><b>HTTP:</b> Porta 80</li>
+      <li><b>HTTPS:</b> Porta 443</li>
+      <li>Cada aplicação só pode usar uma porta por vez.</li>
+    </ul>
+  </div>
+
+</body>
+</html>

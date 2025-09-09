@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo - Aplicações Server-side x Client-side</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8fc;
+            margin: 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #004080;
+        }
+
+        .box {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .highlight {
+            background: #e6f2ff;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resumo: Evolução das Arquiteturas de Aplicações</h1>
+
+    <div class="box">
+        <h2>1. Mainframe</h2>
+        <ul>
+            <li>Tudo era processado no servidor central.</li>
+            <li>Terminais burros apenas exibiam e enviavam dados.</li>
+            <li>Fácil de atualizar (tudo concentrado).</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>2. Cliente-Servidor (Desktop)</h2>
+        <ul>
+            <li>Aplicações ricas feitas em <i>Delphi, VB</i> etc.</li>
+            <li><span class="highlight">2 camadas:</span> cliente acessava diretamente o banco de dados.</li>
+            <li><span class="highlight">3 camadas:</span> cliente + middleware + banco.</li>
+            <li>Dificuldade: atualizar clientes em todas as máquinas.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>3. Web Server-side</h2>
+        <ul>
+            <li>O servidor gera <b>HTML dinâmico</b> e envia ao cliente.</li>
+            <li>Ex.: <b>PHP, Java (JSP), Python (Django)</b>.</li>
+            <li>Vantagem: atualização centralizada (sem instalar em cada cliente).</li>
+            <li>Desvantagem: recarregamento da página, maior latência.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>4. Web Client-side (SPA)</h2>
+        <ul>
+            <li>A lógica e a interface são processadas no <b>navegador</b>.</li>
+            <li>O servidor fornece apenas <b>dados</b> (JSON via APIs).</li>
+            <li>Ex.: <b>React, Angular, Vue.js</b>.</li>
+            <li>Experiência parecida com desktop: drag & drop, interatividade, atualizações rápidas.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>5. Aplicações Mistas</h2>
+        <ul>
+            <li>Parte server-side + parte client-side.</li>
+            <li>Ex.: aplicação em PHP com algumas telas feitas em React.</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>Resumo Final</h2>
+        <ul>
+            <li><b>Server-side:</b> servidor gera HTML e envia pronto ao cliente.</li>
+            <li><b>Client-side:</b> servidor envia dados e o navegador monta a interface.</li>
+            <li><b>Evolução:</b> Mainframe → Cliente-servidor → Server-side Web → Client-side Web (SPA).</li>
+        </ul>
+    </div>
+</body>
+
+</html>

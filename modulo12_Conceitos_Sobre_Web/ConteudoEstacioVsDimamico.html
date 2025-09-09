@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo - Conteúdo Estático e Dinâmico</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f8fc;
+      margin: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1, h2 {
+      color: #004080;
+    }
+    .box {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .highlight {
+      background: #e6f2ff;
+      padding: 3px 6px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Resumo: Conteúdo Estático x Conteúdo Dinâmico</h1>
+
+  <div class="box">
+    <h2>🔹 Conteúdo Estático</h2>
+    <ul>
+      <li>Arquivos prontos gravados no servidor (HTML, CSS, JS, imagens, fontes).</li>
+      <li>O servidor apenas <b>lê e devolve</b> esses arquivos.</li>
+      <li>Sempre que acessado, o conteúdo é exatamente o mesmo.</li>
+      <li>Exemplo: uma página HTML fixa enviada via FTP e sem alterações por meses.</li>
+      <li>Mesmo que a página tenha animações (JS/Flash), ainda é estática se o servidor só entrega arquivos prontos.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>🔹 Conteúdo Dinâmico</h2>
+    <ul>
+      <li>Gerado <b>a partir de código</b> no servidor (PHP, Python, Node.js, etc.).</li>
+      <li>Pode incluir dados variáveis, como:</li>
+      <ul>
+        <li>Hora atual.</li>
+        <li>Lista de clientes ou produtos vindos do banco de dados.</li>
+        <li>Resultados filtrados por um usuário.</li>
+      </ul>
+      <li>O HTML muda a cada requisição, dependendo dos dados ou da lógica aplicada.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>🔹 Dualidade no Front-end</h2>
+    <ul>
+      <li>Em aplicações SPA (React, Angular, Vue):</li>
+      <ul>
+        <li>Do ponto de vista do <b>servidor</b>, é estático (entrega só HTML + JS + CSS).</li>
+        <li>Do ponto de vista do <b>navegador</b>, é dinâmico (JavaScript gera conteúdo na tela).</li>
+      </ul>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>🔹 Estratégias Híbridas</h2>
+    <ul>
+      <li>Gerar páginas estáticas periodicamente com dados atualizados.</li>
+      <li>Exemplo: rodar a cada 15 min um script que gera a “lista dos produtos mais vendidos”.</li>
+      <li>Vantagem: menos consultas ao banco, mais velocidade.</li>
+      <li>Usado em grandes aplicações (ex.: Netflix, OLX).</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>✅ Conclusão</h2>
+    <ul>
+      <li><span class="highlight">Estático:</span> arquivos prontos entregues pelo servidor, sempre iguais.</li>
+      <li><span class="highlight">Dinâmico:</span> HTML gerado por código (servidor ou cliente), mudando a cada requisição.</li>
+      <li>Hoje, muitas aplicações misturam os dois para <b>performance e escalabilidade</b>.</li>
+    </ul>
+  </div>
+</body>
+</html>
