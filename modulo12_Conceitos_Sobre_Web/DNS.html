@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo DNS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #0066cc;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Resumo sobre DNS</h1>
+    </header>
+
+    <section>
+        <h2>O que é DNS?</h2>
+        <p>
+            O <strong>DNS (Domain Name System)</strong> é um sistema que traduz
+            nomes de domínios (como <em>www.exemplo.com</em>) em
+            <strong>endereços IP</strong>, que são compreendidos pelos servidores.
+            Isso facilita a navegação, já que é mais simples lembrar nomes do que números.
+        </p>
+    </section>
+
+    <section>
+        <h2>Como funciona?</h2>
+        <ol>
+            <li>O usuário digita um endereço no navegador.</li>
+            <li>O computador consulta o servidor DNS configurado na rede.</li>
+            <li>O DNS busca o IP correspondente (localmente, em cache, ou em outros servidores).</li>
+            <li>O IP é retornado e a conexão com o servidor é feita.</li>
+        </ol>
+        <p>
+            O DNS usa normalmente o protocolo <strong>UDP</strong> na porta <strong>53</strong>,
+            por ser mais rápido que o TCP.
+        </p>
+    </section>
+
+    <section>
+        <h2>Tipos de Busca</h2>
+        <ul>
+            <li><strong>Recursiva:</strong> o servidor DNS pergunta a outros até obter o IP.</li>
+            <li><strong>Iterativa:</strong> o servidor DNS retorna a referência de outro servidor para continuar a
+                busca.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Principais Registros DNS</h2>
+        <ul>
+            <li><strong>A:</strong> associa domínio/subdomínio a um IP (IPv4).</li>
+            <li><strong>AAAA:</strong> associa domínio/subdomínio a um IP (IPv6).</li>
+            <li><strong>MX:</strong> define servidores de e-mail do domínio.</li>
+            <li><strong>CNAME:</strong> cria apelidos (um domínio apontando para outro).</li>
+            <li><strong>TXT:</strong> registros de texto usados para validações e segurança.</li>
+            <li><strong>NS:</strong> aponta para os servidores de nomes do domínio.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Experiência prática</h2>
+        <p>
+            Em servidores Linux, a configuração de DNS é muito comum.
+            Provedores como <strong>Registro.br</strong> oferecem DNS gratuito,
+            mas para recursos avançados, como subdomínios dinâmicos com curingas,
+            é necessário usar serviços como o <strong>Amazon Route 53</strong>.
+        </p>
+    </section>
+
+    <footer>
+        <p>📌 Este é um resumo simples sobre DNS para fins didáticos.</p>
+    </footer>
+</body>
+
+</html>
