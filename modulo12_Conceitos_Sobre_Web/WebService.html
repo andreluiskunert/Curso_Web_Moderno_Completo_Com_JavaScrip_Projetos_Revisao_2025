@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo Web Services</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    section {
+      background: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    .highlight {
+      background: #eaf2ff;
+      padding: 4px 6px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resumo sobre Web Services</h1>
+  </header>
+
+  <section>
+    <h2>O que são Web Services?</h2>
+    <p>
+      São <span class="highlight">serviços disponibilizados na web</span> que permitem a 
+      comunicação entre diferentes sistemas e linguagens, geralmente via 
+      <span class="highlight">HTTP</span>.  
+      Eles fornecem funções de negócio (como cadastro de clientes) de forma padronizada.
+    </p>
+  </section>
+
+  <section>
+    <h2>Por que usar?</h2>
+    <ul>
+      <li>Facilitam a <strong>interoperabilidade</strong> entre sistemas.</li>
+      <li>Usam formatos <strong>textuais</strong> (XML, JSON) para troca de dados.</li>
+      <li>Mais simples do que formatos binários proprietários.</li>
+      <li>Base para arquiteturas modernas como <strong>SOA</strong> e <strong>Microserviços</strong>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Principais tipos</h2>
+    <ul>
+      <li><strong>SOAP</strong> (Simple Object Access Protocol)  
+        - Baseado em XML, burocrático, usa WSDL para descrever serviços.</li>
+      <li><strong>REST</strong> (Representational State Transfer)  
+        - Mais simples e leve, usa diretamente os verbos do HTTP (GET, POST, PUT, DELETE).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>CRUD no REST</h2>
+    <p>O REST segue as operações básicas do banco de dados:</p>
+    <ul>
+      <li><strong>POST</strong> → Criar (Create)</li>
+      <li><strong>GET</strong> → Ler (Read)</li>
+      <li><strong>PUT</strong> → Atualizar (Update)</li>
+      <li><strong>DELETE</strong> → Excluir (Delete)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Arquiteturas Relacionadas</h2>
+    <ul>
+      <li><strong>SOA</strong> (Service Oriented Architecture):  
+        Serviços centralizados em um <em>barramento</em> (ESB).</li>
+      <li><strong>Microserviços</strong>:  
+        Aplicações divididas em módulos menores, independentes e escaláveis.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Web Services = Integração + Padrão + Flexibilidade</p>
+  </footer>
+</body>
+</html>

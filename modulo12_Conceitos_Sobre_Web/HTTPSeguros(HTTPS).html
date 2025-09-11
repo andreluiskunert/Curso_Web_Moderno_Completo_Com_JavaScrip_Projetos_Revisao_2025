@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo HTTPS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #0056b3;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0056b3;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resumo sobre HTTPS</h1>
+  </header>
+
+  <section>
+    <h2>O que é HTTPS?</h2>
+    <p>
+      O <strong>HTTPS</strong> é a versão segura do protocolo HTTP. Ele utiliza criptografia para proteger
+      os dados trocados entre o navegador e o servidor, garantindo maior segurança na navegação.
+    </p>
+  </section>
+
+  <section>
+    <h2>Como funciona?</h2>
+    <ul>
+      <li>O "S" vem de <strong>Secure</strong> (seguro).</li>
+      <li>A segurança é feita usando protocolos <strong>TLS</strong> (Transport Layer Security) ou <strong>SSL</strong> (Secure Sockets Layer).</li>
+      <li>Os dados são criptografados, dificultando ataques como o "homem do meio".</li>
+      <li>É necessário instalar um <strong>certificado digital</strong> no servidor.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Certificado x Protocolo</h2>
+    <p>
+      É importante diferenciar:
+    </p>
+    <ul>
+      <li><strong>Protocolo</strong>: SSL ou TLS, responsáveis pela criptografia.</li>
+      <li><strong>Certificado</strong>: arquivo emitido por uma <strong>Autoridade Certificadora (CA)</strong> que valida a identidade do site.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Autoridades Certificadoras</h2>
+    <p>
+      São entidades responsáveis por emitir e validar certificados digitais.  
+      Exemplo: <strong>Let's Encrypt</strong>, que oferece certificados gratuitos e confiáveis.
+    </p>
+  </section>
+
+  <section>
+    <h2>Por que usar HTTPS?</h2>
+    <ul>
+      <li>Protege dados sensíveis (senhas, informações pessoais, etc.).</li>
+      <li>Evita que terceiros interceptem a comunicação.</li>
+      <li>Passa mais confiança para os usuários.</li>
+      <li>É recomendado para qualquer aplicação moderna.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>HTTPS = HTTP + TLS/SSL + Certificado Digital</p>
+  </footer>
+</body>
+</html>
