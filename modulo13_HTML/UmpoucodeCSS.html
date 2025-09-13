@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo CSS e HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background: #f5f5f5;
+      color: #333;
+    }
+    h1 {
+      color: #005f99;
+    }
+    .highlight {
+      background: #ffdddd;
+      padding: 4px 6px;
+      border-radius: 4px;
+    }
+    .box {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Introdução ao CSS no HTML</h1>
+  <div class="box">
+    <p>O CSS é usado para dar <strong>estilo</strong> ao HTML. Ele pode ser aplicado de três formas principais:</p>
+    <ul>
+      <li><span class="highlight">Inline</span> – dentro da própria tag HTML.</li>
+      <li><span class="highlight">&lt;style&gt;</span> – no cabeçalho da página.</li>
+      <li><span class="highlight">Arquivo externo</span> – recomendado, usando <code>&lt;link&gt;</code>.</li>
+    </ul>
+
+    <p>Dois atributos importantes:</p>
+    <ul>
+      <li><code>id</code> → identificador único de um elemento.</li>
+      <li><code>class</code> → permite aplicar estilos a vários elementos.</li>
+    </ul>
+
+    <p>Um seletor CSS pode ser:</p>
+    <ul>
+      <li>Elemento: <code>h1 { }</code></li>
+      <li>Classe: <code>.fundo-vermelho { }</code></li>
+      <li>ID: <code>#texto-principal { }</code></li>
+    </ul>
+
+    <p>Exemplo de CSS:</p>
+    <pre>
+h1 {
+  color: blue;
+  font-size: 30px;
+}
+
+.fundo-vermelho {
+  background-color: red;
+  color: white;
+}
+    </pre>
+
+    <p>O CSS permite organizar melhor o layout, separar conteúdo de estilo e reaproveitar formatações.</p>
+  </div>
+</body>
+</html>
