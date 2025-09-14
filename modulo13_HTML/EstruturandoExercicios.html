@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo - Servidor e SPA com AJAX</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #0078d7;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      min-height: 300px;
+    }
+    footer {
+      text-align: center;
+      background: #333;
+      color: #fff;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resumo: Servidor Local e SPA com AJAX</h1>
+  </header>
+
+  <nav>
+     <a href="Curso_Web_Moderno_Completo_Com_JavaScrip_Projetos_Revisao_2025/modulo13_HTML/EstruturandoExercicios.html" data-link>Voltar</a>
+    <a href="exercicios/teste.html" data-link>Exercício 01</a>
+    <a href="exercicios/outro.html" data-link>Exercício 02</a>
+  </nav>
+
+  <main id="conteudo">
+    <p>👋 Clique nos links acima para carregar conteúdos dinâmicos aqui.</p>
+  </main>
+
+  <footer>
+    <p>📚 Aprendendo HTML, Servidor Local e AJAX</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll("[data-link]").forEach(link => {
+        console.log(link)
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        const url = this.getAttribute("href");
+
+        fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            document.getElementById("conteudo").innerHTML = html;
+          })
+          .catch(() => {
+            document.getElementById("conteudo").innerHTML = "<p>❌ Erro ao carregar o conteúdo.</p>";
+          });
+      });
+    });
+  </script>
+</body>
+</html>
