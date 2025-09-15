@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumo - Exercícios de HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #4CAF50;
+    }
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+    .exemplo {
+      background: #f9f9f9;
+      border-left: 4px solid #4CAF50;
+      padding: 10px;
+      margin: 10px 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Resumo - Exercícios de HTML</h1>
+  </header>
+  <main>
+    <h2>Objetivo</h2>
+    <p>
+      O capítulo ensina como trabalhar com <strong>textos em HTML</strong>, mostrando
+      o uso de cabeçalhos, parágrafos, espaçamentos e formatações básicas.
+      A ideia é aplicar exercícios em cenários práticos, preparando para CSS e novas tecnologias.
+    </p>
+
+    <h2>Cabeçalhos (h1 a h6)</h2>
+    <p>
+      Representam a hierarquia de títulos: <code>&lt;h1&gt;</code> é o mais importante
+      (como o título de um livro) e <code>&lt;h6&gt;</code> o menos relevante.
+      Importância semântica, não tamanho do texto.
+    </p>
+
+    <h2>Parágrafos</h2>
+    <p>
+      Criados com a tag <code>&lt;p&gt;</code>. Espaços extras e quebras de linha
+      não são considerados pelo navegador; para separar ideias, use novos parágrafos.
+    </p>
+
+    <h2>Negrito e Itálico</h2>
+    <p>
+      O negrito usa <code>&lt;b&gt;</code> e o itálico <code>&lt;i&gt;</code>.
+      Hoje é mais comum aplicar estilos via CSS ou usar tags semânticas.
+    </p>
+    <div class="exemplo">
+      <p><b>Texto em negrito</b> e <i>texto em itálico</i></p>
+    </div>
+
+    <h2>Sobrescrito e Subscrito</h2>
+    <p>
+      Usados para fórmulas e notações: <code>&lt;sup&gt;</code> (acima) e <code>&lt;sub&gt;</code> (abaixo).
+    </p>
+    <div class="exemplo">
+      <p>2<sup>2</sup> = 4</p>
+      <p>H<sub>2</sub>O = Água</p>
+    </div>
+
+    <h2>Espaços em Branco</h2>
+    <p>
+      O HTML ignora múltiplos espaços. Para inserir manualmente, use entidades
+      como <code>&amp;nbsp;</code> ou aplique espaçamento via CSS.
+    </p>
+    <div class="exemplo">
+      <p>Palavra1&nbsp;&nbsp;&nbsp;Palavra2</p>
+    </div>
+  </main>
+</body>
+</html>
