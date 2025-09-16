@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Técnicas Textuais em HTML - Parte 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #444;
+    }
+    p {
+      margin: 8px 0;
+    }
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    .exemplo {
+      background: #fff;
+      border-left: 4px solid #0077cc;
+      padding: 10px;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Parte 2 - Técnicas Textuais em HTML</h1>
+
+  <h2>Quebras</h2>
+  <p><code>&lt;br&gt;</code>: cria uma quebra de linha.</p>
+  <p><code>&lt;hr&gt;</code>: insere uma linha horizontal para separar conteúdos.</p>
+
+  <h2>Ênfase Semântica</h2>
+  <p><code>&lt;strong&gt;</code>: destaca algo importante (negrito por padrão).</p>
+  <p><code>&lt;em&gt;</code>: dá ênfase a um texto (itálico por padrão).</p>
+  <div class="exemplo">
+    Exemplo: <strong>Somente pessoal autorizado</strong> deve entrar.  
+    Atenção: <em>Cuidado com alta voltagem</em>.
+  </div>
+
+  <h2>Citações</h2>
+  <p><code>&lt;blockquote&gt;</code>: citação longa.</p>
+  <p><code>&lt;q&gt;</code>: citação curta (com aspas automáticas).</p>
+
+  <h2>Abreviações e Definições</h2>
+  <p><code>&lt;abbr&gt;</code>: abreviações, ex.: <abbr title="Professor">Prof.</abbr></p>
+  <p><code>&lt;dfn&gt;</code>: definição de termos, ex.: <dfn>Buraco negro</dfn>.</p>
+
+  <h2>Referências</h2>
+  <p><code>&lt;cite&gt;</code>: cita uma obra.</p>
+  <p><code>&lt;address&gt;</code>: informações de contato.</p>
+
+  <h2>Alterações no Texto</h2>
+  <p><code>&lt;del&gt;</code>: texto removido.  
+     <code>&lt;ins&gt;</code>: texto inserido.  
+     <code>&lt;s&gt;</code>: texto não válido.</p>
+  <div class="exemplo">
+    Preço antigo: <s>R$ 2.249</s> → Novo preço: <ins>R$ 1.799</ins>
+  </div>
+
+  <h2>Importância da Semântica</h2>
+  <p>O uso correto das tags melhora a acessibilidade, ajuda leitores de tela e facilita a indexação por buscadores.</p>
+</body>
+</html>
