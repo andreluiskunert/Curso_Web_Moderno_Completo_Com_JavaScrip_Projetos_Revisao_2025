@@ -2,11 +2,13 @@
 <h2>Projeto</h2>
 <ul class="tree">
     <li>
-        Backend
+        <span data-links-folder>Backend</span>
+
         <ul>
             app
             <ul>
-                <li>produto.js<li>
+                <li>produto.js
+                <li>
                 <li>usuario.js </li>
                 <li>venda.js</li>
             </ul>
@@ -14,7 +16,8 @@
         </ul>
     </li>
     <li>
-        config
+        <span data-links-folder> config </span>
+
         <ul>
             <li>banco.js</li>
             <li>rotas.js</li>
@@ -22,10 +25,11 @@
         </ul>
     </li>
     <li>
-        frontend
+        <span data-links-folder> frontend </span>
         <ul>
-            <li> 
-                public
+            <li>
+                <span data-links-folder> public </span>
+
                 <ul>
                     <li>app.css</li>
                     <li>app.js</li>
@@ -36,3 +40,13 @@
     </li>
 </ul>
 <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+<script>
+    document.querySelectorAll('[data-links-folder]').forEach(folder => {
+        folder.onclick = function (e) {
+            const ul = folder.nextElementSibling
+            const d = ul.style.display
+            ul.style.display = d === 'none' ? 'block' : 'nome'
+        }
+    })
+
+</script>
