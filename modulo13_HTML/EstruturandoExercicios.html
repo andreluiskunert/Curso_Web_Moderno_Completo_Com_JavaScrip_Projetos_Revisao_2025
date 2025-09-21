@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,14 @@
       background: #f4f4f4;
       color: #333;
     }
+
     header {
       background: #222;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
+
     nav {
       background: #0078d7;
       display: flex;
@@ -24,23 +27,27 @@
       gap: 15px;
       padding: 10px;
     }
+
     nav a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     main {
       max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: #fff;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
       min-height: 300px;
     }
+
     footer {
       text-align: center;
       background: #333;
@@ -50,22 +57,27 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <h1>Resumo: Servidor Local e SPA com AJAX</h1>
   </header>
 
   <nav>
-      <a href="exercicios/teste.html" data-link>Exercício 01</a>
+    <a href="exercicios/teste.html" data-link>Exercício 01</a>
     <a href="exercicios/texto1.html" data-link>Exercício 02</a>
     <a href="exercicios/listas.html" data-link>Exercício 03</a>
     <a href="exercicios/listasAlinhadas.html" data-link>Exercício 04</a>
-        <a href="exercicios/links.html" data-link>Exercício 05</a>
+    <a href="exercicios/links.html" data-link>Exercício 05</a>
+    <a href="exercicios/tabela.html" data-link>Exercício 06</a>
+    <a href="exercicios/cuidadoURLNavegador.html" data-link>Exercício 07</a>
 
 
 
-    
-    
+
+
+
+
   </nav>
 
   <main id="conteudo">
@@ -79,7 +91,7 @@
 
   <script>
     document.querySelectorAll("[data-link]").forEach(link => {
-        console.log(link)
+      console.log(link)
       link.addEventListener("click", function (e) {
         e.preventDefault();
         const url = this.getAttribute("href");
@@ -96,4 +108,5 @@
     });
   </script>
 </body>
+
 </html>
