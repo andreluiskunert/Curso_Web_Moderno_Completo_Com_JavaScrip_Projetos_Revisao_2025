@@ -2,5 +2,36 @@
 <form action="http://localhost:3003/usuarios" method="POST">
     <h2>Nome:</h2>
     <input type="text" name="nome">
+    <h2>Senha de acesso:</h2>
+    <input type="password" name="senha">
+    <h2>Deixe seu comentário abaixo:</h2>
+    <textarea name="bio" cols="30" rows="10"></textarea>
+    <div>
+        <input type="raio" name="tipo" value=""> Admin
+        <input type="raio" name="tipo" value=""> Aluno(a)
+           <input type="raio" name="tipo" value=""> Professor(a)
+
+    </div>
+    <div>
+        <input type="checkbox" name="ativo"> Ativo
+    </div>
+    <select name="estado">
+         <option >Selecione</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="PR">Paraná</option>
+
+
+    </select>
     <button>Incluir</button>
 </form>
+<style>
+    input,
+    textarea, select {
+        display: block;
+        margin-bottom: 10px;
+    }
+     input[type=radio], input[type=checkbox]{
+        display: inline;
+     }
+</style>
