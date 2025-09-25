@@ -2,36 +2,59 @@
 <form action="http://localhost:3003/usuarios" method="POST">
     <h2>Nome:</h2>
     <input type="text" name="nome">
+
     <h2>Senha de acesso:</h2>
     <input type="password" name="senha">
+
     <h2>Deixe seu comentário abaixo:</h2>
     <textarea name="bio" cols="30" rows="10"></textarea>
     <div>
-        <input type="raio" name="tipo" value=""> Admin
-        <input type="raio" name="tipo" value=""> Aluno(a)
-           <input type="raio" name="tipo" value=""> Professor(a)
-
+        <label>
+            <input type="radio" name="tipo" value="admin"> Admin
+        </label>
+        <label>
+            <input type="radio" name="tipo" value="aluno" checked> Aluno(a)
+        </label>
+        <label>
+            <input type="radio" name="tipo" value="professor"> Professor(a)
+        </label>
     </div>
+
+
     <div>
         <input type="checkbox" name="ativo"> Ativo
     </div>
+
     <select name="estado">
-         <option >Selecione</option>
+        <option>Selecione</option>
         <option value="RS">Rio Grande do Sul</option>
         <option value="SC">Santa Catarina</option>
         <option value="PR">Paraná</option>
-
-
     </select>
+
+    <select name="interesse" multiple size="5">
+        <option value="js">JavaScript</option>
+        <option value="java">Java</option>
+        <option value="php">PHP</option>
+        <option value="python">Python</option>
+        <option value="go">Go</option>
+        <option value="c">C</option>
+    </select>
+
     <button>Incluir</button>
+    <button>Alterar</button>
 </form>
+
 <style>
     input,
-    textarea, select {
+    textarea,
+    select {
         display: block;
         margin-bottom: 10px;
     }
-     input[type=radio], input[type=checkbox]{
+
+    input[type=radio],
+    input[type=checkbox] {
         display: inline;
-     }
+    }
 </style>
