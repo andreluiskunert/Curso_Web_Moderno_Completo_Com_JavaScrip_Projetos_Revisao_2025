@@ -1,3 +1,5 @@
+ <div wm-slider>
+
 <p>
     <img src="http://files.cod3r.com.br/curso-web/imagem1.jpg" alt="Muro da cidade" width="513" height="342"
         title="Muro da cidade por Tarso Bessa">
@@ -21,10 +23,40 @@
     </picture>
 </p>
 
+ </div>
+
+
 <style>
+    p {
+        position:absolute;
+        display: none;
+    }
     .circular{
         width: 513px;
         background-color: #4444;
 
     }
+    .cidade {
+        width: 513px;
+        height: 342px;
+        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+        background-position: center;
+        background-size: 200%;
+    }
 </style>
+<script>
+    function mover(elem, inicio, fim, passo, callback){
+            const novoInicio = inicio - passo
+            if(novoInicio >= fim) {
+                elem.style.left = novoInicio + 'pix'
+                    setTimeout(() => mover(elem, novoInicio, fim, passo, callback),7)
+            } else {
+                callback()
+            }
+    }
+    const p = document.querySelector('[wm-slider] > p')
+    p.style.display = 'block'
+    mover(p, 1500, -520, 5, ()=>{
+        console.log('Terminou!!')
+    })
+</script>
