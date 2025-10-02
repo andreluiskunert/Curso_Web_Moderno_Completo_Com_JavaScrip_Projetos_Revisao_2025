@@ -1,9 +1,12 @@
 <video id="meuVideo" width="800" height="450" controls autoplay controlsList="nodownload">
     <source src="http://files.com.br/curso-web/video.mp4" type="video/mp4">
+    Seu browser não aguenta
 
 </video>
 <div wm-progresso="meuVideo" class="progresso">
- <div></div>
+ <div>
+
+ </div>
 </div>
 <div>
     <button wm-play="meuVideo"> play</button>
@@ -25,3 +28,18 @@
         width: 30%;
     }
 </style>
+<script>
+    function configuraVideo(id){
+        const video = document.getElementById(id)
+        video.oncontext = () => false
+        document.querySelector(`[wm-play=${id}]`).onclick= e => video.play()
+        document.querySelector(`[wm-play=${id}]`).onclick= e => video.pause ()
+        setInterval(()=>{
+            const percentual = (video.currentTime / video.duration)* 100
+            const valorDiv = document.querySelector(`[wm-progresso=${id}] > div ` )
+            valorDiv.sytyle.width = `${percentual.toFixed(1)}%`
+        })
+        
+    }
+    configuraVideo('meuVideo')
+</script>
