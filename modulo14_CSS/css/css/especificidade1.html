@@ -6,11 +6,52 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+                 marquee{
+        background-color: aqua;
+        font-weight: 300;
+        color: #000;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .rodape{
+        font-weight: 100;
+        font-size: 1rem;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    h3{
+        font: optional;
+        font-weight: 200;
+        font-family: initial;
+    }
+    /*   */
+    p{
+        background-color: #Aaaa;
+    }
+    .observacao{
+        background-color: #5f5;
+        border: dashed 5px;
+        padding: 200px!important;
+        font-size: 40px;
+    }
+  p.observacao{
+     padding: 5px;
+     background: linear-gradient(to right, red, yellow) ;
+  }
     </style>
 </head>
+ <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos
+ </marquee>
+
 
 <body>
     <p class='observacao'>Olha essa observação!!!!</p>
 </body>
-
+ <footer>
+       <div class="rodape">
+         <h3>reponsavel Andre Luis Kunert_Técnico em Informática e Analistta de TI e Sitemas/Futuro Dev Full Stack_2025  </h3>
+       </div>
+      <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos </marquee>
+     </footer>
 </html>

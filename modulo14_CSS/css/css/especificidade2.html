@@ -6,9 +6,35 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://specificity.keegan.st/ */
+          marquee{
+        background-color: aqua;
+        font-weight: 300;
+        color: #000;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .rodape{
+        font-weight: 100;
+        font-size: 1rem;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    h3{
+        font: optional;
+        font-weight: 200;
+        font-family: initial;
+    }
+    body{ font-size: 40px;}
+    div[wm-cor] {background-color:  darkorange;}
+    div{background-color: #00b;color:#ffff}
+    div.estilo{background-color: green;}
+    div:hover{background-color: purple;}
+    #unico1, #unico2{ background-color: #000;}
     </style>
 </head>
-
+ <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos
+ </marquee>
 <body>
     <div id="unico1" class="estilo">
         #unico1 vs .estilo vs inline
@@ -19,5 +45,10 @@
     <div class="estilo">.estilo</div>
     <div>elemento</div>
 </body>
-
+<footer>
+       <div class="rodape">
+         <h3>reponsavel Andre Luis Kunert_Técnico em Informática e Analistta de TI e Sitemas/Futuro Dev Full Stack_2025  </h3>
+       </div>
+      <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos </marquee>
+     </footer>
 </html>
