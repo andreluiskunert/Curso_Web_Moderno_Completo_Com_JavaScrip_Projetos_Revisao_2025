@@ -1,0 +1,167 @@
+O pessoal tem um comportamento um pouco estranho quando você usa lá no blog eu quero mostrar a eles
+
+pra você.
+
+No menu da nossa aplicação que ele usa essa estratégia.
+
+No blog eu vou abrir aqui a página Index HTML aqui no capítulo CSS tem duas páginas Index então eu vou
+
+abrir aqui no capítulo CSS.
+
+Beleza nós temos aqui a propriedade chave aqui 14 blogs.
+
+Pronto estou usando ele lá no blog e aqui dentro do menu principal na parte de navegação então procurar
+
+aqueles pegos vou procurar aqui a parte do menu principal que é isso tudo certo inclusive com H idem
+
+do H Hotel 12 navegações onde um lado e outro do outro.
+
+Se eu mudar isso pra blocos de primeiro comentar o que vai acontecer.
+
+Dão Refresh cá embaixo do outro uma lista gigante não era isso que eu estava preferindo fazer.
+
+Eu prefiro ficar com a Alice no lado outro do outro.
+
+E aí como essa opção que a opção padrão que é a opção Blog que ele colocou embaixo do outro.
+
+Quem é blog nesse sentido é o Navi.
+
+Essa tag navegação é seu inspecionar que a minha página colocar na parte de navegação o menu principal
+
+da ABI e olhe aqui você vai ver que por padrão a navegação display blog seja cada navegação e ter sua
+
+própria linha.
+
+Mas eu queria manter o mundo lá da outra por isso usei o display blog legal.
+
+Até aí tudo bem.
+
+Se a gente analisar um pouco mais aqui o menu da aplicação você vai ver que a largura do menu é 400
+
+pixels certo então vou colocar aqui 400 pixels e ela tem um altura de 1552 está aí você vê na tela pequenininho
+
+e 400 por 1552.
+
+Mais notem que eu coloquei 198 pixels só vou fazer o seguinte só para mostrar o efeito.
+
+Depois a gente volta pra essa versão aqui eu vou mandar esse aqui pra 200 pra ficar travado valeu inclusive
+
+só colocar 200 aqui não tem problema.
+
+7 vai funcionar eu vou colocar aqui.
+
+A largura mínima vai ser largura mas vou colocar largura e aqui no menu principal é verde se a largura
+
+mínima vou colocar largura fixa.
+
+Então tenho só bota aqui pra ser 98.
+
+Fazer o seguinte 198.
+
+Só pra me achar que vai ficar funcionando.
+
+Então eu vou tirar isso aqui vale 1000 e pra cá e aí vou dar um refresh ficou funcionando dá certo aqui
+
+%98 mais no momento que eu coloco duzentos e Belle Refresh você vai ver que vai quebrar ficar em Barra
+
+do outro.
+
+Aí você pode perguntar Poxa ela não é 400 aqui se eu inspecionar novamente você vai ver que de fato
+
+é 400.
+
+Se eu olhar aqui selecionar conteúdo do menu principal você vai ver que continua com 400 pixels e que
+
+cada uma das navegações tem duzentos.
+
+Certo colocando aqui o menu você vai ver que tem 200 ele botou aqui em cima pra aparecer aqui ele tem
+
+duzentos de largura e 735 de altura mas ele não colocou o mundo lá do outro porque é exatamente o efeito
+
+que estou querendo mostrar pra vocês agora.
+
+Se eu vim aqui no HTML e fizer isso aqui olhando o que é que vai acontecer vou tirar esse espaço e colocar
+
+uma navegação terminado começando a outra e salvá la Refresh.
+
+Aí você vai ver que vai ficar o mundo lá da outra sem aquela margem existem aquelas linhas e esse aparelho
+
+que estava separando de cinza.
+
+Porquê.
+
+Porque quando eu faço isso fica um espaço em branco entre a primeira navegação fica um caractere em
+
+branco e a segunda navegação então vai acontecer de você em vez de tá fazendo um bloco de dois elementos
+
+entre esses dois vai ter um caractere em branco lá e para atrapalhar o posicionamento.
+
+E quando você estiver trabalhando com blog tem esse efeito.
+
+Certo você resolve ou tirando esse espaço ou mesmo colocando aqui um comentário você coloca aqui um
+
+comentário dessa linha.
+
+E aí você pode iniciar o comentário aqui e terminar o comentário aqui.
+
+Isso é bem estranho certo mas o fato é que com esse comentário você também tira essa linha em branco
+
+e você não tem espaço nenhum entre as duas colunas.
+
+O fato é que se você colocar os valores 400 e 200 vai dar certo mais se você tirar esse caractere em
+
+branco no meio.
+
+Se você não tirar esse caractere em branco você pode até colocar esse requisito ou seja diminuir o tamanho
+
+que ele vai quebrar la no CSS.
+
+Você pode dizer o seguinte o seguinte Não coloque com 200 pixels e 5 1 199.
+
+Vamos ver se dá certo não refresh refresh ainda não deu certo e você vai colocar com 198 e aí você dá
+
+um refresh aí e aí funcionam os dois e tá vendo que tem uma linha aqui entre um e outro essa linha e
+
+esse caractere em branco está sendo considerado dentro do blog.
+
+Você pode.
+
+Aqui você tem algumas possibilidades como essa de juntar e aqui no caso você pode usar em vez de largura
+
+chegou aqui de se fazer outra como estava antes.
+
+Você pode em vez de usar fixo você pode colocar aqui.
+
+A largura mínima 400 e largura mínima 200.
+
+Neste caso ainda sim vai ter esse espaço aqui no meio o que não me incomoda.
+
+Acho até que ficou interessante.
+
+Mas você pode tirar esse espaço vazio no meio aqui.
+
+Certo porque não se você acessa não tem essa linha notou colocasse ele em lugar nenhum simplesmente
+
+apareceu.
+
+E você pode tirar e remover qualquer tipo de espaço em branco que haja entre essas duas navegações.
+
+Aqui sumiu e se eu colocar esses espaços em branco aqui você vai ver que vai aparecer seria.
+
+Então esse é um defeito que não é tão conhecido assim mas que é um efeito que pode gerar algum tipo
+
+de dor de cabeça na hora de você tentar fazer os ajustes finos.
+
+Isso acontece quando você usa um blog que você precisa ter muito cuidado para não quebrar muito a cabeça
+
+porque com todo esse efeito é legal porque eu fiz questão de que isso aparecesse no menu pra que eu
+
+nessa nessa aula eu falasse pra você sobre esse problema e aí em vez de a gente criar uma situação pra
+
+simular isso eu coloquei uma situação real e na verdade aconteceu isso que não estava fazendo só que
+
+eu já conhecia esse comportamento e aí eu achei legal trocar a sala aqui só pra explicar sobre isso
+
+tá bom.
+
+Fica a dica e a gente se vê na próxima aula.
