@@ -6,8 +6,86 @@
     <title>Position</title>
     <style>
         /* ... */
+        div{
+            font-size: 60px;
+            padding: 30px;
+            border: solid 5px #222;
+        }
+        .static {
+            top: 100px;
+            left: 100px;
+            background-color: steelblue;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 30px;
+            background-color: teal;
+        }
+        .relative1{
+            position: relative;
+            left: 0px;
+            top: 0px;
+            background-color: seagreen;
+        }
+        .absolute1{
+            position: absolute;
+            left: 350px;
+            top: 120px;
+            background-color: violet;
+        }
+        .relative2{
+            position: relative;
+            left: 250px;
+            top: 2000px;
+            width: 200px;
+            height: 200px;
+            background-color: slategray;
+        }
+         .absolute2 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+        }
+        .sticky{
+            position:-webkit-sticky; /* safari*/
+            position: sticky;
+            background-color: #777;
+            top: 10px;
+        }
+           /* ... */
+        marquee {
+            background-color: aquamarine;
+            font-weight: 300;
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+        }
+
+        .rodape {
+            font-weight: 100;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h3 {
+            font: optional;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            background-color: aqua;
+            font-size: 25px;
+
+
+        }
+
+        /*  */
     </style>
 </head>
+<marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos
+</marquee>
 
 <body>
     <div class="static">Static (Padrão)</div>
@@ -22,5 +100,12 @@
     <div class="sticky">Sticky</div>
     <p style="padding-bottom: 2000px;">Opa</p>
 </body>
+<footer>
+    <div1 class="rodape">
+        <h3>reponsavel Andre Luis Kunert_Técnico em Informática e Analistta de TI e Sitemas/Futuro Dev Full Stack_2025
+        </h3>
+    </div1>
+    <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos </marquee>
+</footer>
 
 </html>
