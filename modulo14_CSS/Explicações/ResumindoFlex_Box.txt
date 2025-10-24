@@ -1,0 +1,665 @@
+Eu acho que é consenso de quase todo o mundo que investir tempo em estudo vai economizar bastante tempo
+
+na hora que você for aplicar esse conhecimento que você adquiriu na prática fazendo algum tipo de software
+
+é o mesmo em outras áreas de atuação.
+
+Só que existe uma área em especial dentro da programação que pelo menos eu vejo que a maioria dos programadores
+
+insistem em não estudar que Apache parte você entender o CS e assim entender princípios dissesse Eu
+
+não vou falar especificamente de CSS mas eu vou falar de uma técnica que é muito usada e é muito simples
+
+de ser aplicada e muito poderosa ao mesmo tempo que é o Flex Box Flex Box é o princípio por trás de
+
+como você faz design ou como você organiza os seus componentes visuais no flat.
+
+E como você faz lei Altino Yet Neira.
+
+E também como você faz o layout de modernamente na web.
+
+Existe um outro recurso moderno que é o CSS grid.
+
+Mas ele ainda tem algumas limitações como você não pode colocar um ingrediente da outra deve tá aí surgindo
+
+especificações implementações para isso mais o Flex Box.
+
+Você pode ter um flex Box dentro do outro.
+
+é por isso que o seu conceito tão popular é aplicado no flat aplicado no Mineiro e aplicado em qualquer
+
+ambiente que você esteja desenvolvendo com o RS se você tiver desenvolvendo por exemplo o One ou usando
+
+alguma aplicação como é o caso do Alex.
+
+Tudo o que envolve web é o que você vai ter à sua disposição.
+
+O Flex Box hoje vou mostrar uma aplicação que eu fiz e existe um repositório específico.
+
+A gente lá no codec recursos Barra e YouTube que tem algumas coisas lá eu acabei de subi o projeto há
+
+14 minutos atrás esse projeto Flex Box que eu fiz envio de assim Supersimples o projeto basicamente
+
+tem uma pasta flex que tem um contêiner flex com Penna e tem o flex.
+
+E tem exatamente esses três itens aqui e tem um componente de formulário.
+
+Basicamente o componente formulário coloco aqui um formulário com algumas opções do Flex box mais famosas
+
+para a gente mexer nas opções e B na prática.
+
+Como esses três Flex itens e os itens de um contêiner Flex vão se comportar.
+
+E essa linha aqui é quase o mais claro com essas certinhas e um dos conceitos essenciais que é exatamente
+
+o Men Axis ou o eixo principal.
+
+Eu vou falar com vocês um pouco sobre isso exatamente agora.
+
+Então vão lá.
+
+O eixo principal na verdade é flex Box.
+
+Ele tem dois eixos que é o eixo principal e o eixo que corta o eixo principal que ele chama de Cross
+
+Axis e o eixo na perpendicular acredito que seja perpendicular.
+
+Então você tem o Men Axis e o Cross Axe.
+
+Se o homem Axis ele é o eixo da linha ou seja na horizontal significa que o Cross Axis corta o eixo
+
+principal e ele passa a ser o eixo na coluna.
+
+Ou seja o eixo na vertical você tem um axis o Cross Axis é sempre o Man Axis.
+
+Ele é o eixo da linha não.
+
+Nem sempre ele é o eixo da linha.
+
+Você pode trocar isso definindo uma propriedade chamada Flex Direction que é exatamente a primeira propriedade
+
+que tem que ele por enquanto.
+
+Por padrão na web isso é importante por padrão na web.
+
+Ou mais por padrão em dispositivos móveis.
+
+O eixo principal acabou sendo na coluna por quê.
+
+Porque você acabou segurando o celular quase sempre nesse.
+
+Acho que esse é o eixo maior.
+
+Então esse seria o eixo principal nos dispositivos mobile já na web o eixo principal acaba sendo a linha
+
+já que nossas telas normalmente têm mais largura do que a altura e o formato wide.
+
+Então dito isso o eixo principal ele pode ser mudado a partir do momento que você muda a propriedade
+
+do Flex direction.
+
+E essa é a primeira propriedade que eu vou mudar aqui ao mudar de linha para a coluna que é que vai
+
+fazer.
+
+Ele vai organizar os nossos itens no eixo da coluna só para efeito visual.
+
+Eu coloquei aqui esse eixo dizendo que ele está baixo e não de cima para baixo.
+
+Outra possibilidade é a gente continuar no eixo da coluna mas a gente usar por exemplo colam árvores
+
+ou seja a coluna reversa significa que ele vai usar esse eixo principal no o eixo vertical como sendo
+
+agora o Men Axis é só que ela mesma começar de forma reversa de baixo pra cima.
+
+Então você percebe que como Flex Direction você consegue mudar o homem Axis ou o eixo principal normalmente
+
+por padrão e normalmente não por padrão ele é o iPhone da linha.
+
+Eu posso colocar lol ou seja ele vai começar direita para a esquerda não como é o normal Neca da esquerda
+
+para a direita.
+
+Então a gente está acostumado de cima para baixo da esquerda para a direita.
+
+O Flex Box também por padrão ele vai nessa linha.
+
+Então voltando aqui nós temos o eixo principal como sendo da linha nesse momento e trocando aqui o Flash
+
+Collection.
+
+O eixo principal vai para a coluna e de fato sempre que muda de propriedade ele aplica esses atributos.
+
+Olhe que eu estou mexendo aqui nesse formulário mas as no Flex com nem significa que nesse momento eu
+
+estou mexendo nesse contêiner azul aqui com bola preta.
+
+Ou seja eu estou de fato aplicando essas propriedades dentro desse contêiner azul.
+
+Ou seja ele é na verdade ele está com essas propriedades por padrão então quando ele inicia o justificou
+
+a Flex taxa já explicar o alinhar itens a Flex Start o alumínio como também a Flex Start.
+
+E assim vai.
+
+é assim que eu for mais sério vocês vão percebendo as mudanças.
+
+No caso do Flex aí tem esse Flex aí tem dois Flex aí tem três nós temos três formulários separados e
+
+por enquanto não estou aplicando o que está aqui dentro do Flex.
+
+Aí tem um.
+
+Por exemplo se mudar aqui isso aqui pra índia não vai fazer nada a não ser que eu venho aqui.
+
+Clique em Ativar.
+
+Aí sim ele passa a ser ativado mas daqui a pouco a gente entra um pouco no detalhe do Flex aí tem.
+
+Então nós temos aqui o cólon e agora a gente tem outra propriedade e eu vou lá.
+
+O Flex buraco que a gente vai bem mais à frente e eu vou colocar aqui no justificou que eu vou deixar
+
+inicialmente no padrão na linha e nós vamos trabalhar essa outra propriedade chamada justificou.
+
+Essa propriedade é fundamental ter propriedade faz ela vai alinhar os itens no eixo principal não importa
+
+para preste atenção não importa se o eixo principal é a linha ou a coluna quem vai dizer.
+
+O eixo principal é a propriedade Flex Direction ou o dispositivo que você está se programando desde
+
+que o Flash Collection não esteja explicitamente definido se ele não tiver definido o Flash Direction
+
+ele assumiu o valor padrão e o valor padrão pode mudar de acordo com a plataforma que você esteja trabalhando
+
+então vamos lá justificou ontem.
+
+Ele começa com o Flex e Start ou seja alinhe todos os itens no Man Axis ou seja no eixo principal.
+
+No caso aqui eu estou trabalhando na linha e ali no início da linha ou seja todos os itens vou focar
+
+no início da linha.
+
+Outra possibilidade que você tem menos contente é alinhar no final da linha.
+
+Eu ainda estou no eixo principal e agora eu coloquei todos os itens do final da linha Note que ele não
+
+mudou a ordem dos itens continua sendo o primeiro.
+
+Depois do 2 depois do 3 só que todos alinhados no final.
+
+Outra possibilidade que você tem é colocar os elementos no centro.
+
+Então ele vai alinhar os mesmos elementos na hora que foi definida 1 2 e 3 todos os elementos no centro
+
+e você tem outros dois que é o espécime de junho ou seja espaço entre eles ele vai colocar o primeiro
+
+para colocar um espaço bem grande e o segundo e o espaço ou se vai colocar o primeiro e o último nas
+
+pontas e espaço entre cada um dos elementos seja o Express Mitsuhide ou seja um espaço entre nós temos
+
+o espaço ao redor especialmente esse pessoal.
+
+A diferença do Expresso é que você vai ter espaço também no começo e no final da linha o colocando aqui
+
+você vai ter espaço aqui e espaço aqui.
+
+Obviamente esse espaço aqui ali uns dois espaços e aqui também 2 e no final você também tem espaço ou
+
+seja espaço ao redor dos elementos esse mesmo atributo.
+
+Voltando aqui para o Flex Start mudar isso aqui para a pra cola vai servir agora para alinhar o Men
+
+Axis.
+
+Ele sempre vai além em Axis então se eu colocar aqui ou flex Engine ele vai colocar agora na linha.
+
+Aliás todo mundo no final coloca o centro.
+
+Ele vai colocar centralizado não sentem mais no eixo principal e ele vai colocar aqui o espécie Bitcoin
+
+e os países onde vai funcionar da mesma forma só que agora como eu troquei o eixo principal para ser
+
+a coluna.
+
+Então ele vai acabar alinhando na coluna legal lá o outro atributo extremamente importante.
+
+Na verdade no que diz respeito a alinhamentos fico contente e o online aí tem são os mais importantes.
+
+O que é que o Allan tem se faz ele sempre vai alinhar no Cross Axis então chamou voltar aqui para a
+
+coluna para começar a partir da coluna.
+
+Então eu tenho aqui o especial de por enquanto e eu vou querer alinhar os itens agora no eixo transversal
+
+eixo transversal ao eixo da coluna ou seja o eixo vertical.
+
+Então já que a minha linha Axis é o eixo da linha transversal da coluna está aqui você está colocando
+
+os alimentos no início da coluna e eles falam tá aqui nesta coluna.
+
+Eu quero colocar os alimentos no final da minha coluna então eles vão descer lá para baixo.
+
+Ou seja eu acabei de alinhar esses alimentos no Cross Access ou seja no eixo vertical que é o meu Men
+
+Axis nesse momento é o agente da linha.
+
+Ele colocou lá no final eu quero colocar aqui no centro.
+
+Ele vai alinhar no centro do ponto de vista do Cross Axe está no centro ou seja no eixo vertical.
+
+Ele ficou no centro e no meio Axis você colocou esse pessoal e aqui você pode colocar o estreante o
+
+short ele vai esticar ou seja no Cross Axe ele vai checar o componente para o quadro todo o espaço.
+
+E você também tem um chamado bem slide.
+
+A diferença de se colocar aqui logo no início para você ter um do lado outro aqui é o Flex está todo
+
+mundo no início da linha e agora você está usando o slide.
+
+O país lá vai pegar a base do texto e vai usar para alinhar esguicho um pouquinho lógica não tem aqui
+
+do Chrome coloca aqui pelo tinha direito mais grid mais coisa assim.
+
+Lula Grid eu instalados pela Dilma precisará afastá la daqui que ele esquece que exatamente estava instalado
+
+encheu o alto aqui ao aplicado nele você tem aqui como puxar uma linha só pra gente ver no seu olhar
+
+o que ele está usando como base de referência pra fazer o alinhamento exatamente bem lá a base da linha
+
+que é exatamente onde você colocou a luta gestual.
+
+Então é exatamente esse o ponto que ele está usando para fazer o alinhamento e também slide no Cross
+
+Axis.
+
+Você tem um estresse que ele vai checar.
+
+Você tem o centro que ele vai colocar no centralizado.
+
+Você tem o Flex Start flex em que tudo isso você pode fazendo junto com os outros por exemplo.
+
+Agora Flex rende agora no Man Axe.
+
+Já que estou trabalhando com os meus companheiros Exhibition Salt centralizado e você pode trabalhando
+
+esses dois atributos pra organizar os elementos no eixo principal e no eixo cruzado.
+
+Então eu diria que esses são os dois atributos mais importantes e algumas coisas alguns detalhes a mais
+
+como Flex bases eu vou deixar de fora mas com certeza a parte central do Flex Box será abordada nesse
+
+vídeo.
+
+Outro atributo muito importante é o atributo do além salvo o Alain Self e a forma que você tem dentro
+
+de cada um dos itens de um flex com n.
+
+Note que eu estou a aplicar nessas propriedades no Flex container ou seja no elemento que foi marcado
+
+com o atributo de display Flex você usa display flex para dizer que ele é flex com tempo.
+
+E aí você coloca justificou.
+
+E além disso você vai pegar todos os itens que estão dentro daquele Flex container.
+
+Quer chamar de flex.
+
+Aí tem.
+
+E nada impede que você consiga colocar um flex como e um flex site dentro de um flex com tela esse Flex
+
+aí tem também ser o Flex conta ele.
+
+E assim vai eu sei que você tem um flex contêiner dentro do outro e dependendo da situação o Flex container
+
+pode ser um Flex tem encolhendo pro pai e ele é um flex com tela que vai ter outros itens dentro dele.
+
+Deu pra entender.
+
+Então aqui o que vai acontecer com você que é digamos assim pegar um item e fazer um tipo de alinhamento
+
+específico para o item.
+
+Aí você chama um alien self ou seja ali um amigo ou coisa do tipo certo.
+
+Então aqui você pode dizer o seguinte eu quero que esse meu lamento claramente ele esteja alinhado no
+
+início da linha.
+
+Então posso clicar aqui e ele vai alinhar nesse caso ele está usando o Cross Axe.
+
+Então vem aqui e aqui então ele aliou no Cross Axis usando o Flex Estate.
+
+No caso do mito 2 Eu quero que ele fique por exemplo no centro e no caso do elemento 3 Eu quero que
+
+ele fique no final.
+
+Então você tem possibilidade de trabalhar especificamente com cada um dos elementos mesmo que o elemento
+
+pai que é o Flex contém não está mandando os elementos fazer o extrato.
+
+Ou seja se você tiver aplicado a linha Self lá em servo vai sobre escrever o alarme.
+
+Isso porque o olá em chefe é mais específico ele só prescreve a propriedade itens do pai.
+
+O que faz sentido porque você quer especificar você coloca muito medo e outra propriedade eu quero trabalhar
+
+com vocês.
+
+é também muito importante o Flex Google para isso eu vou colocar isso aqui no meio e vou colocar isso
+
+aqui no Brasil também.
+
+E o Flex Grow.
+
+Ele é um atributo na verdade você tem duas formas de chamar o flex.
+
+Você pode simplesmente chamar o Flex e baixar o valor.
+
+Eu no começo eu não estava estudando o Flex Box a primeira vez que eu vi a propriedade Flex eu achava
+
+que o Flex significava que você estava habilitando o flex mas a verdade não é na verdade o flex é uma
+
+forma mais rápida de você chamar o atributo de flex Grow a partir do atributo Flex você pode chamar
+
+duas propriedades o flex ou e o Flex que é para encolher.
+
+Eu não vou trabalhar com reflexos aqui mas é simples o mesmo conceito o Google expande.
+
+Eu acho que ele diminui e aqui os números que você pode passar vai dar uma questão de proporção.
+
+Quando você tiver um número menor tem uma proporção menor de crescimento quando ele tiver um número
+
+maior e tem um proporção maior de crescimento.
+
+Então vamos lá.
+
+Eu tenho o meu Flex Google todos os três zerados.
+
+Se eu colocar por exemplo que o elemento vai ter Flex Blue e como ele é o único elemento que tem essa
+
+propriedade ativada.
+
+Todo o restante do meu Men Axis vai ser ocupado por esse elemento.
+
+Notem que esse elemento ele cresce.
+
+Ele estica a parte do Flash Ground Men Axis e ele pode no close Axis ter estranhos e aí ele vai fazer
+
+um traje Cross Axis e também usa o Flex Ground para crescer no homem acrescentou.
+
+Para colocar aqui essa questão do crescimento nas duas direções então vou colocar centralizado de novo.
+
+Então como ele era o único elemento que tem o Flash Blow ele pegou todo o resto da linha e foi lá e
+
+cresceu.
+
+Se você colocar por exemplo o componente 3 pra também crescer em uma proporção de 1 então claramente
+
+vai crescer na proporção de 1.
+
+O elemento 13 vai crescer na proporção de um.
+
+Como eles têm a mesma proporção todo o espaço restante que tinha anteriormente vai ser dividido em duas
+
+partes para os dois componentes crescerem de forma semelhante.
+
+E se você colocar por exemplo o elemento 2 para crescer também na proporção de um ele vai pegar o espaço
+
+restante por três e faz com que os três andamentos cresçam de forma proporcional a mais eu posso colocar
+
+por exemplo pra o elemento crescer uma proporção maior duas vezes.
+
+Então ele vai pegar todo o espaço restante vai dividir por dois três quatro exatamente dois três quatro
+
+e o valor total de todos os blocos Grow.
+
+Ele vai dividir o espaço na estante por quatro.
+
+Aí vai dar dois pedaços para o componente um vai dar um pedaço do restante para o componente dois e
+
+um pedaço para o componente três.
+
+Se eu colocar três aqui ele vai dividir o espaço restante com cinco vai dar três partes para o componente
+
+uma parte pro 2 e uma parte 3.
+
+E assim você pode criar por exemplo querer que isso aqui ocupem se das partes restantes.
+
+Ele pegou o restante das 8 partes será para o Apache pro 2 e o Apache pro 3.
+
+Se você colocar zero ele não vai crescer obviamente é aqui tanto faz colocar 8 7 6 5 4 3 2 1 como não
+
+tem ninguém correndo pelo espaço restante ele vai acabar ocupando todo o espaço restante.
+
+Isso aqui também vai acontecer da mesma forma se ele vier pelo eixo da coluna.
+
+Então no auge da coluna ele também vai fazer a mesma coisa eu posso dar aqui ou ali em itens estranhos.
+
+Ele vai fazer agora no Cross Axis que é hoje da linha de baixo ficar estreitos e estreitos e aqui eu
+
+posso colocar os três para serem zerados e ficar aqui no meio já que o justifique controle está centralizado
+
+e aí se eu colocar para esse primeiro aqui e baixar o segundo quero que chegue mais ao PC 8 e o último
+
+vai ser 1.
+
+Então você pode por exemplo criar uma aplicação do tipo e o Bari e o rodapé.
+
+Você pode dar um tamanho específico pra usar no Flex bases flexíveis e serve pra você definir um tamanho.
+
+Por exemplo ficaram 200 pixels e você vai lá coloco Flex bases e diz que ele vai eventualmente crescer.
+
+Eu simplesmente não diz nada e o outro cresce.
+
+E aqui no meio ele vai crescer eu posso colocar do zero aqui zero aqui e aqui eu poderia simplesmente
+
+colocar um fim em um flex bases para o seu retrato da aplicação Flex bases para o futuro da aplicação
+
+com tamanhos predefinidos e o meio vai crescer.
+
+Você pode organizar por exemplo no eixo da coluna.
+
+Nada impede de você pegar esse do meio que seria o 2 que supostamente seria nosso conteúdo você criar
+
+o outro Flex Box.
+
+O fato de o pai ter o eixo da coluna como sendo principal ele não vai transmitir isso para os filhos.
+
+Então se você criar um outro Plex Box imaginando que o padrão seja a linha no caso da web ele vai permanecer
+
+hoje na linha a não ser que você vá lá explicitamente coloque o Flex direction.
+
+Então pessoal nós vimos aqui várias propriedades importantíssimas e eu vou colocar mais uma propriedade
+
+que também é muito importante que é o slide Content e o Flex.
+
+O app para isso eu vou precisar mexer no código.
+
+Vou colocar aqui no blog pra ele ficar aqui e vou colocar o carro flex estados e aqui também Lex está
+
+pronto.
+
+Como a gente começou o código todos desmarcado aqui tirar isso que não vou precisar.
+
+Pronto.
+
+Mas vamos mexer aqui no código onde tem um contêiner.
+
+Eu vou simplesmente duplicar isso aqui várias vezes isolamento 3 várias vezes pra gente ter mais Alemanhas
+
+na tela e você vai perceber o seguinte ele em nenhum momento ele resolveu quebrar a linha e continuar
+
+simplesmente fez mesmo overflow saiu do contêiner e continuou direto como se nada tivesse acontecido.
+
+Por quê.
+
+Porque existe essa propriedade chamada Flex app Flex larápio posso até depois trocar a ordem aqui vou
+
+trocar logo lá no iPhone.
+
+Aí já eram como no final da aula forme onde tem o formulário primeiro o formulário que vai aparecer
+
+aqui em cima aqui.
+
+Esse é o reflexo Direction reflexo rápido colocar para baixo e pronto o fluxo junto do online.
+
+Compreende que são os dois que eu vou querer usar agora aqui é um reflexo Gap.
+
+Eu vou trocar o valor de novo rap ou seja pra ele não quebra a linha para o rap.
+
+Feito isso ele vai quebrar a linha automaticamente.
+
+Então toda a primeira linha foi preenchida até que chegou num momento que não cabia mais o escanteio
+
+nem ele quebrou uma linha de baixo.
+
+E é exatamente o Allan com muita gente que vai dizer como é que o Wally abre as múltiplas linhas dentro
+
+de um Flex tem então aquele tal Flex Start.
+
+Aqui eu posso colocar Flex entre as duas de baixo.
+
+Note que olhando o Allan itens ele vale alinhar no Cross Axis.
+
+OLHA PRA ESSAS DUAS aqui.
+
+Por isso eu coloquei de propósito o número um número dois com diferentes tamanhos.
+
+Agora vou alinhar usando a AI TEM QUE SE COLOCAR AQUI OU senta.
+
+Ele vai alinhar cada um dos elementos dentro de cada linha de forma centralizada mais as linhas as múltiplas
+
+linhas quem vai dizer um alinhamento e o online.
+
+Como aqui eu posso colocar Space Launch ele vai quebrar as linhas com experincia Launch aqui como tem
+
+pouco espaço na linha de cima mas além de baixar fazem muita diferença.
+
+Por exemplo pagar o expresso Launch você vai quebrar os elementos mesmo que você quebra a linha.
+
+Ainda assim você vai colocar os elementos em especial onde você pode colocar.
+
+Flex vai colocar tudo no final.
+
+Então o Allan conta que ele vai servir como já falei pra alinhar as múltiplas linhas da sua aplicação
+
+e além disso vai servir para alinhar no eixo cruzado Cross Axis.
+
+Dentro de cada uma dessas linhas estão colocar aqui por exemplo.
+
+Ele vai colocar os dois em cima de todos os elementos e aqui embaixo você pode colocar o centro ou qualquer
+
+outro que você acha interessante fazer.
+
+Então pessoal a ideia é que vocês possam brincar e aí você pode pegar isso colocar agora no eixo da
+
+coluna como é que ficaria.
+
+Você pode dar uma olhada e ver o resultado não está claro como a paixão pode crescer.
+
+Então ele acabou crescendo.
+
+Você tem aqui como colocar logo você o cólon.
+
+Você também pra ver como é que fica.
+
+é agora essa ferramenta é que vocês conseguem fazer vários testes e bem na prática visualizando o que
+
+cada configuração vai gerar até que você consiga dominar muito bem essa ideia de como você pode fazer
+
+o layout.
+
+Usando Flex boxe isso é muito poderoso ok.
+
+Porque isso vai economizar bastante tempo e você vai usar esse mesmo conceito e aplicá lo.
+
+Como falei anteriormente no flat no Rio de Janeiro na web e pelo menos na minha opinião uma das formas
+
+mais intuitivas e fáceis de fazer layout que existe hoje em dia é uma última observação para você ter
+
+acesso a esse projeto.
+
+Você entra no repositório da cauda e postou no YouTube.
+
+Você clone esse repositório.
+
+E basta você instalar que eu deixo para aqui.
+
+Os comandos que eu mudei foi em BM e para instalar as dependências dentro da pasta do projeto está lá
+
+tudo e depois eu roubei o comando.
+
+Me só fiz aqui uma atualização bem bem me quer no meio mas na requerido.
+
+Então basicamente você vai instalar as dependências.
+
+Ele está lá tudo roda empenho e serve que ele vai ficar rodando na porta 80 80 ou 100 entra que você
+
+vai ter acesso a essa ferramenta.
+
+Eu me coloquei aqui num cantinho e acabei colocando só o último último exercício só para baixar pra
+
+vocês.
+
+Eu quis colocar o meu vídeo aqui.
+
+Nessa parte branca aqui do lado eu acabei colocando esses contêineres pra serem organizados com o Flex
+
+Estate.
+
+Eu posso mudar isso aqui também não um contêiner.
+
+Usei muito Flex nessa aplicação aqui.
+
+Além dessa parte central é aqui vou colocar aqui só a bolinha aqui do lado coca só aqui e ali embaixo
+
+mostro pra vocês.
+
+Se eu quiser mudá la em formulários embaixo eu vou ter um CSS que diz que o justifique como Flex Estate.
+
+Eu posso simplesmente mudar isso aqui só pra Space Launch ficar centralizado.
+
+Então mostrando aqui o resultado é um só o modo aqui um refresh aqui.
+
+Por algum motivo ele não atualizou.
+
+Pronto ele colocou todos os elementos aqui em cima dos formulários com inspecionaram é para ficar um
+
+pouco mais interessante o layout está na nossa aplicação.
+
+Então pessoal é isso que fizemos aqui.
+
+Aula falando sobre o Flex Box.
+
+Tem muitas coisas interessantes para você estudar sobre Flex Box e as ferramentas sem dúvida pode te
+
+ajudar bastante espero ter contribuído com essa aula tem trazido informações relevantes ok meu comentário
+
+para me ajudar de novos conteúdos eu quero falar não só de mão na massa no código.
+
+Eu estou querendo organizar algumas entrevistas aí de uma pessoa que está indo pro Canadá e outra pessoa
+
+que já está no Canadá como recrutador e a gente deve estar fechando as agendas aí pra conversar.
+
+E hoje à noite tá liberado esse vídeo na segunda feira hoje à noite vai ter um link lá no canal do Futurando
+
+e eu vou participar dessa salário de 8 horas da noite se você tiver tempo de vê la jantando na sua casa
+
+e quiser ver um papo legal entre e o Jácome Moura provavelmente fará isso que eu também sou amor e a
+
+gente vai estar conversando lá no final do Futurando sobre plantas e sobre educação sobre muitas coisas
+
+interessantes.
+
+Não lhe falta lá na hora a gente vai definir o preço que vai sai muita coisa legal.
+
+Vejo mais tarde lá pra lá Futurando ao vivo nessa linha até a próxima semana aqui no YouTube com mais
+
+um vídeo no canal da Copel.
+
+Grande abraço.
+
+Até lá.
