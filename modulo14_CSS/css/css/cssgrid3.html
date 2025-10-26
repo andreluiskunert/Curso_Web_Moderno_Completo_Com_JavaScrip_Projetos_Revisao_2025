@@ -6,9 +6,72 @@
     <title>CSS Grid #03</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        header{
+            grid-area: cabecalho;
+        }
+        nav{
+            grid-area: navegacao;
+        }
+        main{
+            grid-area: conteudo;
+        }
+        footer{
+            grid-area: rodape;
+        }
+        /*  */
+        @media(max-width: 700px) {
+             body{
+            display: grid;
+            min-height: 100vh;
+            grid-template-columns: 300px 1fr;
+            grid-template-rows: 80px 1fr100px;
+            grid-template-areas: 
+              'cabecalho cabecalho'
+              'navegacao conteudo'
+              'rodape rodape '
+            ;
+        } 
+        header {display: none;}
+        }
+      
+        /* ... */ div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            border: solid 5px dodgerblue;
+            background: #fff;
+        }  marquee{
+        background-color: aqua;
+        font-weight: 300;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif
+    }
+   
+    .rodape{
+        font-weight: 100;
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    h3{
+        font: optional;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        background-color: azure;
+
+    }
+
     </style>
 </head>
+<header>
+  <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos
+ </marquee>  
+</header>
 
 <body>
     <main class="tag">CONTEÚDO</main>
@@ -18,5 +81,11 @@
 
     <script src="js/tag.js"></script>
 </body>
-
+<footer>
+    <div1 class="rodape">
+        <h3>reponsavel Andre Luis Kunert_Técnico em Informática e Analistta de TI e Sistemas/Futuro Dev Full Stack_2025
+        </h3>
+    </div1>
+    <marquee> Revisão Curso Web Moderno Completo com JavaScript + Projetos </marquee>
+</footer>
 </html>
