@@ -17,7 +17,25 @@
         </ul>
     </div>
     <script>
-        // ...
+        // ... sexta-feira 31/10/2025
+        const lista = document.querySelector('div ul [destino="escritório"]')
+        console.log('Elemento "ul".........')
+        console.log('childNodes', lista.childNodes)
+        console.log('destino', lista.destino)
+        console.log('getAttribute', lista.getAttribute('destino'))
+        console.log('hasAttribute', lista.hasAttribute('destino'))
+        lista.setAttribute('destino', 'empresa')
+        lista.removeAttribute('status', 'aberto')
+        lista.removeAttribute('destino')
+        console.log(lista.dataset.urgencia)
+        lista.dataset.urgencia = 4
+        console.log(lista.getAttribute('data-urgente'))
+        // cuidado...
+        const label = document.querySelector('label')
+        console.log(label.for)
+        console.log(label.htmlFor)
+        console.log(label.getAttribute('for'))
+
     </script>
 </body>
 
