@@ -9,7 +9,34 @@
 
 <body class='conteudo exercicio'>
     <script>
-        // ...
+        // ... Domingo, 02/11/2025_de noite
+        const body = document.querySelector('body')
+        // div1
+        const div1 = document.createElement('div')
+        div1.classList.add('destaque')
+        div1.innerHTML = 'Primeiro'
+        // div2
+        const div2 = document.createElement('div')
+        div2.setAttribute('wm-atributo', 'valor')
+        div2.innerHTML = 'Segundo'
+        //  div3
+        const p = document.createElement('p')
+        p.innerHTML = 'Terceiro'
+        const div3 = document.createElement('div')
+        div3.appendChild(p)
+        // resultados:
+        body.appendChild(div1)
+        body.appendChild(div2)
+        body.appendChild(div3)
+        // no de texto...
+        const texto = document.createTextNode('depois do 2ª vem o ..')
+        div3.insertBefore(texto, div3.childNodes[0])
+        // criação de clone
+        const div4 = div3.cloneNode(true)
+        body.appendChild(div4)
+        // excluir:
+        body.removeChild(div3)
+
     </script>
 </body>
 
