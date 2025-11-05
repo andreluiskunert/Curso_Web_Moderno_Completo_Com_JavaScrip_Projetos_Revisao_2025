@@ -12,8 +12,16 @@
         <p>Texto Inicial</p>
     </div>
     <script>
-        // ...
-    </script>
+        // ... Terça-feira,04/11/2025_de noite
+        const div = document.querySelector('div')
+        div.innerHTML = 'Texto Alterado'
+        // div.outerHTML = 'Texto Alterado'
+        div.insertAdjacentHTML('beforebegin', '<p> Antes depois...</p>')
+        div.insertAdjacentHTML('afferbegin', '<p>até me breve  </p>')
+        div.insertAdjacentHTML('beforeend', '<p> até a proxima</p>')
+        //  somente texto (sem tags)
+        console.log(div.innerText)
+</script>
 </body>
 
 </html>
