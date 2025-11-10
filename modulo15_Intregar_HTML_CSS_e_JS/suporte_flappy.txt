@@ -1,0 +1,14 @@
+ <img class="passaro" src="./imgs/passaro.png" alt="passaro">
+        <div class="par-de-barreiras">
+            <!-- De cima: -->
+           <div class="barreira">
+              <div class="corpo"> </div>
+              <div class="borda"> </div>
+           </div>
+           <!-- De baixo: -->
+           <div class="barreira">
+              <div class="borda"> </div>
+              <div class="corpo"> </div>
+           </div>
+        </div>
+        <div class="progresso">100</div>
