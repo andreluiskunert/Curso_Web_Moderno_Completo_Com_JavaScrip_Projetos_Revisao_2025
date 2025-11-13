@@ -1,4 +1,6 @@
 // segunda-feira, 10/11/2025
+// Quarta-feira, 12/11/2025_revisão
+
 function novoElemento(tagName, className){
     const elem = document.createElement(tagName)
     elem.className = className
@@ -26,16 +28,17 @@ function ParDeBarreiras(altura, abertura, x){
     this.elemento.appendChild(this.superior.elemento)
     this.elemento.appendChild(this.inferior.elemento)
     // parar aqui...passar café....
+
     this.sortearAbertura = () =>{
         // Retornando Terça-feira 11/11/2025
         const alturaSuperior = Math.random() * (altura - abertura)
-        const alturaInfeior = altura - abertura - alturaSuperior
+        const alturaInferior = altura - abertura - alturaSuperior
         this.superior.setAltura(alturaSuperior)
-        this.inferior.setAltura(alturaInfeior)
+        this.inferior.setAltura(alturaInferior)
         
     }
     this.getX = () => parseInt(this.elemento.style.left.split('px')[0])
-    this.getX = x => this.elemento.style.left = `${x}px`
+    this.setX = x => this.elemento.style.left = `${x}px`
     this.getLargura = () => this.elemento.clientWidth
 
     this.sortearAbertura()
@@ -43,4 +46,4 @@ function ParDeBarreiras(altura, abertura, x){
 
 }
 const b = ParDeBarreiras(700, 200, 400)
-document.querySelector('wm-flappy').appendChild(b.elemento)
+document.querySelector('[wm-flappy]').appendChild(b.elemento)
