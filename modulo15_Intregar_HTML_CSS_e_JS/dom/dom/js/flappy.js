@@ -28,6 +28,7 @@ function ParDeBarreiras(altura, abertura, x){
     this.elemento.appendChild(this.superior.elemento)
     this.elemento.appendChild(this.inferior.elemento)
     // parar aqui...passar café....
+    // Revisão01: segunda-feira, 17/11/2025
 
     this.sortearAbertura = () =>{
         // Retornando Terça-feira 11/11/2025
@@ -38,6 +39,7 @@ function ParDeBarreiras(altura, abertura, x){
         
     }
     this.getX = () => parseInt(this.elemento.style.left.split('px')[0])
+    
     this.setX = x => this.elemento.style.left = `${x}px`
     this.getLargura = () => this.elemento.clientWidth
 
