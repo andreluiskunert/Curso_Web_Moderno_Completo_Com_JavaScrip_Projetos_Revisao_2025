@@ -1,12 +1,12 @@
 // segunda-feira, 10/11/2025
 // Quarta-feira, 12/11/2025_revisão
 
-function novoElemento(tagName, className){
+function novoElemento(tagName, className) {
     const elem = document.createElement(tagName)
     elem.className = className
     return elem
 }
-function Barreira(reversa = false){
+function Barreira(reversa = false) {
     this.elemento = novoElemento('div', 'barreira')
 
     const borda = novoElemento('div', 'borda')
@@ -19,7 +19,7 @@ function Barreira(reversa = false){
 // const b = new Barreira(true)
 // b.setAltura(200)
 // document.querySelector('[wm-flappy]').appendChild(b.elemento)
-function ParDeBarreiras(altura, abertura, x){
+function ParDeBarreiras(altura, abertura, x) {
     this.elemento = novoElemento('div', 'par-de-barreiras')
 
     this.superior = new Barreira(true)
@@ -30,16 +30,16 @@ function ParDeBarreiras(altura, abertura, x){
     // parar aqui...passar café....
     // Revisão01: segunda-feira, 17/11/2025
 
-    this.sortearAbertura = () =>{
+    this.sortearAbertura = () => {
         // Retornando Terça-feira 11/11/2025
         const alturaSuperior = Math.random() * (altura - abertura)
         const alturaInferior = altura - abertura - alturaSuperior
         this.superior.setAltura(alturaSuperior)
         this.inferior.setAltura(alturaInferior)
-        
+
     }
     this.getX = () => parseInt(this.elemento.style.left.split('px')[0])
-    
+
     this.setX = x => this.elemento.style.left = `${x}px`
     this.getLargura = () => this.elemento.clientWidth
 
@@ -49,38 +49,39 @@ function ParDeBarreiras(altura, abertura, x){
 }
 // const b = ParDeBarreiras(700, 200, 400)
 // document.querySelector('[wm-flappy]').appendChild(b.elemento)
-function Barreiras(altura, largura, abertura, espaco, notificarPonto){
-  this.pares = [
-    new ParDeBarreiras(altura, abertura, largura),
-    new ParDeBarreiras(altura, abertura, largura + espaco),
-    new ParDeBarreiras(altura, abertura, largura + espaco * 2),
-    new ParDeBarreiras(altura, abertura, largura + espaco * 3),
-  ]
-  const deslocamento = 3
-  this.animar = () => {
-    this.pares.forEach(par =>{
-        par.setX(par.getX()- deslocamento)
-        // quando o elemento sair da área do jogo
-        if(par.getX() <-par.getLargura()) {
-            par.setX(par.getX( + espaco * this.pares.length))
-            par.sortearAbertura()
-        }
-        const meio = largura / 2
-        const cruzouOMeio = par.getX() + deslocamento >= meio 
-         && par.getX() < meio
-         if(cruzouOMeio) notificarPonto()
-    })
-  }
+// Terça-feira,18/11/2025 à noite_Revisão
+function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
+    this.pares = [
+        new ParDeBarreiras(altura, abertura, largura),
+        new ParDeBarreiras(altura, abertura, largura + espaco),
+        new ParDeBarreiras(altura, abertura, largura + espaco * 2),
+        new ParDeBarreiras(altura, abertura, largura + espaco * 3),
+    ]
+    const deslocamento = 3
+    this.animar = () => {
+        this.pares.forEach(par => {
+            par.setX(par.getX() - deslocamento)
+            // quando o elemento sair da área do jogo
+            if (par.getX() < -par.getLargura()) {
+                par.setX(par.getX(+ espaco * this.pares.length))
+                par.sortearAbertura()
+            }
+            const meio = largura / 2
+            const cruzouOMeio = par.getX() + deslocamento >= meio
+                && par.getX() < meio
+            if (cruzouOMeio) notificarPonto()
+        })
+    }
 }
 // sexta-feira 14/11/2025
-function Passaro(alturaJogo){
+function Passaro(alturaJogo) {
     let voando = false
     this.elemento = novoElemento('img', 'passaro')
-    this.elemento.scr = 'imgs/passaro.png'
+    this.elemento.src = 'imgs/passaro.png'
 
     this.getY = () => parseInt(this.elemento.style.bottom.split('px')[0])
-    this.getY = this.elemento.style.bottom = `${y}px`
-    
+    this.setY = y => this.elemento.style.bottom = `${y}px`
+
     window.onkeydown = e => voando = true
     window.onkeyup = e => voando = false
 
@@ -88,33 +89,47 @@ function Passaro(alturaJogo){
         const novoY = this.getY() + (voando ? 8 : -5)
         const alturaMaxima = alturaJogo - this.elemento.clientHeight
 
-        if(novoY <= 0) {
+        if (novoY <= 0) {
             this.setY(0)
-        } else if(novoY >= alturaMaxima) {
-            this.setY(alturaMaxima) 
-        } else{
+        } else if (novoY >= alturaMaxima) {
+            this.setY(alturaMaxima)
+        } else {
             this.setY(novoY)
         }
     }
     this.setY(alturaJogo / 2)
-
 }
+
 
 // Sábado 15/11/2025
-function Progresso(){
+function Progresso() {
     this.elemento = novoElemento('span', 'progresso')
-    this.atualizarPontos = pontos =>{
+    this.atualizarPontos = pontos => {
         this.elemento.innerHTML = pontos
     }
-     this.atualizarPontos(0)
+    this.atualizarPontos(0)
 }
-const barreiras = new Barreiras(700, 1200, 200, 400)
-const passaro = new Passaro(700)
-const areaDoJogo = document.querySelector('[wm-flappy]')
-areaDoJogo.appendChild(passaro.elemento)
-areaDoJogo.appendChild(new Progresso().elemento)
-barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
-setInterval(()=>{
-    barreiras.animar()
-    passaro.animar()
- }, 20)
+// const barreiras = new Barreiras(700, 1200, 200, 400)
+// const passaro = new Passaro(700)
+// const areaDoJogo = document.querySelector('[wm-flappy]')
+// areaDoJogo.appendChild(passaro.elemento)
+// areaDoJogo.appendChild(new Progresso().elemento)
+// barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
+// setInterval(()=>{
+//     barreiras.animar()
+//     passaro.animar()
+//  }, 20)
+function FlappyBird() {
+    let pontos = 0
+    const areaDoJogo = document.querySelector('[wm-flappy]')
+    const altura = areaDoJogo.clientHeight
+    const largura = areaDoJogo.clientWidth
+
+    const progresso = new Progresso()
+    const barreiras = new Barreiras(altura, largura, 200, 400,
+        () => progresso.atualizarPontos(++pontos))
+    // 
+    areaDoJogo.appendChild(progresso.elemento)
+    areaDoJogo.appendChild(Passaro.elemento)
+    barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
+}
