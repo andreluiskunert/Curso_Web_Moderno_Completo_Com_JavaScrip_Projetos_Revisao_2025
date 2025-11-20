@@ -119,6 +119,22 @@ function Progresso() {
 //     barreiras.animar()
 //     passaro.animar()
 //  }, 20)
+function estaoSobrepostos(elementoA, elementoB) {
+    const a = elementoA.getBoundingClienteRect()
+    const b = elementoB.getBoundingClienteRect()
+
+    const horizontal = a.left + a.width >= b.left && b.width >= a.left
+    const vertical = a.top + a.height >= b.top && b.top + height >= b.top
+    return horizontal && vertical
+}
+function colidiu(passaro, barreiras) {
+    barreiras.pares.forEach(ParDeBarreiras => {
+        if (!colidiu) {
+            // finalizo amanhã
+        }
+    })
+}
+
 function FlappyBird() {
     let pontos = 0
     const areaDoJogo = document.querySelector('[wm-flappy]')
@@ -132,4 +148,13 @@ function FlappyBird() {
     areaDoJogo.appendChild(progresso.elemento)
     areaDoJogo.appendChild(Passaro.elemento)
     barreiras.pares.forEach(par => areaDoJogo.appendChild(par.elemento))
+    // Quarta-feira,19/11/2025
+    this.start = () => {
+        // loop do jogo
+        const temporizador = setInterval(() => {
+            barreiras.animar()
+            passaro.animar()
+        }, 20)
+    }
 }
+new FlappyBird().start()
