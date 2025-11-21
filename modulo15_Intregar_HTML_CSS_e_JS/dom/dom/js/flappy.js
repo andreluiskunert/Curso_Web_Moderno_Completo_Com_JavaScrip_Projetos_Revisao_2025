@@ -131,6 +131,9 @@ function colidiu(passaro, barreiras) {
     barreiras.pares.forEach(ParDeBarreiras => {
         if (!colidiu) {
             // finalizo amanhã
+            const superior = ParDeBarreiras.superior.elemento
+            const inferior = ParDeBarreiras.inferior.elemento
+            colidiu = estaoSobrepostos(passaro.elemento, superior) || estaoSobrepostos(passaro.elemento, inferior)
         }
     })
 }
@@ -154,6 +157,9 @@ function FlappyBird() {
         const temporizador = setInterval(() => {
             barreiras.animar()
             passaro.animar()
+            if(colidiu(passaro, barreiras)){
+                clearInterval(temporizador)
+            }
         }, 20)
     }
 }
