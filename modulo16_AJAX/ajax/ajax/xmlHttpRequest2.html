@@ -23,5 +23,21 @@
 
     <script>
         // ...
+        function ajax(config){
+            const xhr = XMLHttpRequest()
+            xhr.open(config.metodo, config.url, true)
+        }
+        xhr.onload = e => {
+            if(xhr.status === 200){
+                config.sucesso(xhr.response) 
+            } else if(xhr.status >= 400){
+                config.erro({
+                    code: xhr.status,
+                    text: xhr.statusText
+                })
+            }
+        }
+        // }  xhr.sendo()
+    
     </script>
 </body>
