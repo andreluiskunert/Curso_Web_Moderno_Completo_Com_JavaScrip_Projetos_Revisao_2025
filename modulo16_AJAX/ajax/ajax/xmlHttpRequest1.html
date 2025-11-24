@@ -2,62 +2,83 @@
 <html>
 
 <head>
-    <meta charset='UTF-8'>
+    <meta charset="UTF-8">
     <title>XMLHttpRequest #01</title>
-    <link rel='stylesheet' href='css/estilo.css'>
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body class="conteudo exercicio">
     <h1>Estados</h1>
 
     <script>
-             // ... Rever => sabado,22/11/2025 a tarde
-        function ajax(config){
-            const xhr = XMLHttpRequest()
+        // Função Ajax corrigida
+        function ajax(config) {
+            const xhr = new XMLHttpRequest()   // CORRIGIDO
+
             xhr.open(config.metodo, config.url, true)
-       
-        xhr.onload = e => {
-            if(xhr.status === 200){
-                config.sucesso(xhr.response) 
-            } else if(xhr.status >= 400){
-                config.erro({
-                    codigo: xhr.status,
-                    texto: xhr.statusText
-                })
-            }    
-        } 
-        xhr.sendo()
-     }
-     function criarTabela(estados){
-            const linhas = estados.map(estado => {
+
+            xhr.onload = () => {
+                if (xhr.status === 200) {
+                    config.sucesso(xhr.response)
+                } else if (xhr.status >= 400) {
+                    config.erro({
+                        codigo: xhr.status,
+                        texto: xhr.statusText
+                    })
+                }
+            }
+
+            xhr.send()   // CORRIGIDO
+        }
+
+        // Criar tabela dinamicamente
+        function criarTabela(estados) {
+            const tabela = document.createElement('table')
+            tabela.border = "1"
+
+            estados.forEach(estado => {
+
+                const tr = document.createElement('tr')   // CORRIGIDO
+
+                // coluna ID
                 const tdId = document.createElement('td')
                 tdId.innerHTML = estado.id
-                // nome
+
+                // coluna Nome
                 const tdNome = document.createElement('td')
-                tdNome.innerHTML = estado.nome 
-                // sigla
+                tdNome.innerHTML = estado.nome
+
+                // coluna Sigla
                 const tdSigla = document.createElement('td')
-                tdSigla.innerHTML = estado.sigla 
-                //  tr
+                tdSigla.innerHTML = estado.sigla
+
+                // montar a linha
                 tr.appendChild(tdId)
                 tr.appendChild(tdNome)
                 tr.appendChild(tdSigla)
-                return tr
+
+                tabela.appendChild(tr)
             })
-            const tabela = document.createElement('table')
-            linhas.forEach(linha => tabela.appendChild(linha))
-     }
-    ajax({
-        url:"dados/estados.json",
-        metodo: "get",
-        sucesso(resposta) {
-          const estados = JSON.parse(resposta)
-          criarTabela(estados)
-        }, 
-        erro(e){
-            const msg = document.createTextNode(`${e.codigo}: ${e.texto}`)
-            document.body.appendChild(msg)
+
+            document.body.appendChild(tabela)   // EXIBE NA TELA
         }
-    })
+
+        // Chamada AJAX
+        ajax({
+            url: "dados/estados.json",
+            metodo: "GET",
+
+            sucesso(resposta) {
+                const estados = JSON.parse(resposta)
+                criarTabela(estados)
+            },
+
+            erro(e) {
+                const msg = document.createTextNode(`${e.codigo}: ${e.texto}`)
+                document.body.appendChild(msg)
+            }
+        })
     </script>
+
 </body>
+</html>
