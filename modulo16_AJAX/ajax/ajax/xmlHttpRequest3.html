@@ -13,7 +13,7 @@
     <script>
         // Sexta-feira,28/11/2025
         function ajax(config){
-            const xhr = XMLHttpRequest()
+              const xhr = new XMLHttpRequest()
             xhr.open(config.metodo, config.url, true)
             xhr.onreadystatechange = e => {
                 if(xhr.readyState === 4){
@@ -22,7 +22,7 @@
                     } else if (xhr.status >= 400){
                         config.erro({
                             codigo: xhr.status,
-                            text: xhr.statusText
+                            texto: xhr.statusText
                         })
                     }
 
@@ -34,9 +34,10 @@
             url: "dados/estados.xml",
             metodo: "get",
             sucesso(resposta){
-                const estados = resposta.getElementsByTaName('estado')
-                const itens = Array.from(estados).reduce((html ,estado) => html + `<li>${estado.attributes.nome.value}</li>`, '')
-                document.body.insertAdjacentElement('beforeend', `<ul> ${itens}  </ul>`)  
+                const estados = resposta.getElementsByTagName('estado')
+                const itens = Array.from(estados).reduce(
+                    (html ,estado) => html + `<li>${estado.attributes.nome.value}</li>`, '' )
+                document.body.insertAdjacentElement('beforeend', `<ul>${itens}</ul>`)  
             },
             erro(e){
                 const msg = document.createTextNode(`${e.codigo}: ${e.texto}`)
