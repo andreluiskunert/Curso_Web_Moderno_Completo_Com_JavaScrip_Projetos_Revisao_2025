@@ -14,6 +14,29 @@
     <div id="post"></div>
 
     <script>
-        // ...
+        //  Sabádo 06/12/2025_de noite 
+        // ... explicar:
+        // requisição ponto body{...req.body}
+        // requisição ponto query {...req.query}
+        // requisição ponto params{...req.params} ex.: app.get('/parOuImpar/:numeros', (req, res) =>{....}
+        function exibirResultado(id, dados) {
+            const texto = JSON.stringify(dados)
+            document.getElementById(id).innerHTML = texto
+        } 
+        //  axios('parOuImpar?numero=7',).then(resp => exibirResultado('get', resp.data))
+
+        axios.get('parOuImpar', {
+            params: {
+                numero: 6
+
+            }
+        }).then(resp => exibirResultado('get', resp.data))
+    //   formulario:
+    axios.post('formulario', {
+        nome:'André Luis',
+        sobrenome: 'Kunert',
+        profissao: 'Desenvolvedor_Full_Stack_Java_Alemanha'
+    }).then(resp => exibirResultado('post', resp.data))
+      
     </script>
 </body>

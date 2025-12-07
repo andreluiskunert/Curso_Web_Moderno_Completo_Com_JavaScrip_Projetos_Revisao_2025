@@ -33,4 +33,20 @@ app.post('/formulario', (req, res) =>{
 
     })
 })
+//  Sabádo 06/12/2025_de noite 
+app.get('/parOuImpar', (req, res) =>{
+    // requisição ponto body{...req.body}
+   // requisição ponto query {...req.query}
+  // requisição ponto params{...req.params} ex.: app.get('/parOuImpar/:numeros', (req, res) =>{....}
+
+
+    const par = parseInt(req.query.numero) % 2 === 0
+    res.send({
+        resultado: par ? 'par' : 'impar'
+    })
+
+
+
+})
+
 app.listen(8080, () => console.log('Executando....'))
