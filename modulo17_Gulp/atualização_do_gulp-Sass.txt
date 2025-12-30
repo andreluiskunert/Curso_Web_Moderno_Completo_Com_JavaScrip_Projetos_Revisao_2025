@@ -1,0 +1,15 @@
+Atualização do Gulp-Sass
+
+Fala, pessoal. Beleza?
+
+Na próxima aula o professor vai instalar as dependências do projeto e na instalação de vocês vai ser gerado um erro. Para que esse erro não ocorra, vocês precisarão fazer o seguinte:
+
+1° Abra o seu arquivo pakage.json e atualize a dependência "gulp-sass" para a versão 5.0.0, deixando ela assim em seu arquivo: "gulp-sass": "5.0.0",.
+
+Abaixo estou deixando um print para melhor referência:
+
+https://img-c.udemycdn.com/redactor/raw/q_and_a/2022-09-22_11-26-11-44c0e29af8457a5316649c9576f84686.png
+
+2° Salve o arquivo e pode prossiga com o curso normalmente.
+
+Um abraço e bons estudos.
