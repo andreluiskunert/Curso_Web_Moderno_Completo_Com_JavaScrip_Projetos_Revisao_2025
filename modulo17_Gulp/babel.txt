@@ -1,0 +1,89 @@
+Antes de mais nada para começar o exercício de JavaScript.
+
+Eu quero rapidamente falar sobre um projeto chamado Babel ou Babel.
+
+Esse ponto aí esse projeto.
+
+O que é que o Babel faz na verdade fica muito claro aqui se você olhar logo no início da definição de
+
+Babel Babel é um compilador de JavaScript.
+
+Ele é usado para que você consiga usar hoje os recursos do JavaScript de amanhã do futuro seja acabou
+
+de sair uma nova especificação do JavaScript daqui que os browsers se adaptem a essa nova especificação
+
+daqui que esse recurso esteja disponível não apenas na última versão por exemplo do Chrome mas na versão
+
+que é usada na máquina de quem realmente vai acessar sua aplicação.
+
+Ou seja é muito difícil você aplicar um determinado recurso que acabou de sair que muitas vezes era
+
+interessante importante para você usar mas ainda não está amplamente distribuída nas versões mais novas
+
+do Brasil.
+
+Se você olhar por exemplo e custo x só está presente em 23 por cento dos browsers de todos os usuários
+
+do mundo será que faz sentido você colocar num site de venda eletrônico um recurso que só está disponível
+
+em 23 por cento dos brasileiros então provavelmente você não vai querer usar esse recurso.
+
+Por mais legal que ele seja exatamente porque você não vai conseguir compilar seu código não será interpretado
+
+de forma correta no Brasil e o Babel ele vai fazer isso.
+
+Quando você entra aqui no site do Abel logo aqui de cara você tem por exemplo pegar um exemplo bem simples
+
+colocar aqui console Fotolog ou se eu fizer isso ele vai colocar exatamente a mesma coisa.
+
+Mas se eu colocar por exemplo três elevado A3 que é um código que é mais novo digamos assim né não é
+
+tão novo assim mais.
+
+Nem todo Brasil suporta por exemplo a operação de exponenciação com esse símbolo foi que ele fez ele
+
+transformou seu código em um código do tipo.
+
+Ponto Paula arrepiou W 13,3 que é exatamente um código que já está muito tempo suportado pelos brasileiros.
+
+Então claramente esse código aqui é um código mais compatível do que esse código aqui.
+
+O Babel faz exatamente isso que é pegar o código que você escreveu e fazer você escrever usando os recursos
+
+mais modernos da linguagem sem se preocupar muito com a questão de compatibilidade e no final ele vai
+
+lá e coloca essas informações da forma mais digamos assim suportada possível pelos brasileiros.
+
+Então se você vem aqui criar uma variável Let a recebe três ou então Basic e você tem que Let expoente
+
+recebe 10.
+
+Você pode colocar aqui base quase vezes expoente e como eu usei Let It é um recurso já de certa forma
+
+antigo mais menos compatível do que eu vá que existe desde sempre então ele converteu o flash para a
+
+barra para deixar o seu código o mais compatível possível com todos os graus entrar exatamente isso
+
+que Babel faz.
+
+Nós vamos usar o Babel como parte do nosso exercício.
+
+Na próxima aula Supersimples a gente só precisa instalar o plug in do Babel do clube e o próprio Babel
+
+e a gente vai agora usar ele dentro do cubo fácil só pra vocês entender um pouco do que significa o
+
+Babel que é exatamente a referência dada da Torre de Babel nas múltiplas línguas e tal.
+
+E a ideia é você usar hoje os recursos mais modernos do JavaScript de uma forma sem peso na consciência
+
+porque o Abel vai pegar tudo que você escreveu em código moderno e jogar de tal forma que o código fique
+
+o mais compatível possível.
+
+Ou seja esse também é um fluxo que não acontece automaticamente acontece automaticamente aqui dentro
+
+de um ambiente já pré configurado para isso alguém precisa fazer essa conversão.
+
+é uma das ferramentas que você pode usar para fazer essa conversão exatamente um golpe.
+
+Na próxima além de mostrar um exemplo trabalhando com JavaScript a gente usar também o Babel.
