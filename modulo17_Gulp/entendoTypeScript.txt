@@ -1,0 +1,89 @@
+Só fala um pouquinho sobre o tal Biscuit.
+
+Essa vai ser uma aula um tanto quanto fora off Talk assim como eu falei do Abel explicar um pouquinho
+
+do que é o JavaScript.
+
+JavaScript é o que a gente chama de super conjunto Super 7 JavaScript ou seja tudo o que tem no JavaScript
+
+é suportado pelo script até porque no final das contas o script.
+
+Ele não é uma linguagem independente.
+
+Na verdade ele funciona.
+
+Você escreve o código JavaScript e no final o código vai ser sempre convertido para JavaScript.
+
+Ou seja por isso é conhecido como um super conjunto que é a ideia do tipo de scripts.
+
+A idéia mais basilar é mais importante do Core M do coração do script é exatamente colocar chips dentro
+
+do JavaScript ou seja a linguagem padrão que é uma linguagem para quando você vai criar uma variável
+
+em JavaScript.
+
+Você simplesmente coloca Var a recebe 3 a pode receber verdadeiro falso a receber uma função.
+
+A polícia B um objeto ou seja não há a checagem de tipos em JavaScript.
+
+Já no caso do tag script você define tipos e isso faz com que você consiga ter uma verificação digamos
+
+assim mais detalhada.
+
+O compilador consegue detectar uma série de problemas por conta da linguagem 7 paga por isso que logo
+
+digamos assinala o script e o JavaScript que escalonar JavaScript Dex Key os que escala ou seja você
+
+consegue ter projetos muito grande escala não significa que você não consegue fazer isso com JavaScript
+
+obviamente.
+
+Certo Eu por exemplo gosto muito trabalhar com JavaScript diretamente também gosto do clube tem um custo
+
+de scripts nós na cor que você quiser não olhada mais não é importante você entender o exclusivos para
+
+esse exercício que nós vamos fazer só um exemplo mais um exemplo você consegue pegar o código que não
+
+funciona nativamente seja você tentar evitar esse código com o nome de você não vai conseguir e a gente
+
+vai transferir lá esse código e converter se Cole para um código JavaScript.
+
+Esse é um processo que acontece de forma automática precisa ter alguma ferramenta que faça esse processo
+
+de conversão.
+
+A gente vai usar o app usando o login do grupinho como tags escritos para fazer essa conversão.
+
+Além disso script adicionar outras coisas como por exemplo interfaces você definir interfaces que não
+
+é o que tem em JavaScript.
+
+Então você tem uma série de funcionalidades interessantes para trabalhar com tags script a linguagem
+
+desenvolvida pela Microsoft que muita gente usa inclusive confirmou que você está escrito com Angola
+
+você pode usar tais escritos com o yet.
+
+Pode usar tais escritos para definir a sua aplicação Back end por exemplo com o nome você tem várias
+
+aplicações extremamente interessantes como está escrito.
+
+Muita gente usa a documentação também é muito legal estar na versão agora na versão 3 ponto 8 certo
+
+e tem muitas funcionalidades extremamente interessante como eu falei pra vocês anteriormente tem um
+
+custo de scripts nosso Baku com muito mais detalhes sobre a linguagem e os recursos que você pode usar
+
+para estender a capacidade do JavaScript.
+
+Como falei para você usar com ângulo com Yet dá para usar com viu e com várias primor se também pode
+
+usar no back end com o nude pra construir suas APIs.
+
+Muito interessante então pessoal era isso que eu tinha pra falar só pra vocês entenderem do que se trata
+
+o tags clipes na próxima aula relaxar pra vocês o core é bem simples biscuit e vou mostrar que esse
+
+código não é suportado nativamente pelo menu de e pra isso a gente vai precisar fazer um processo transparente
+
+e automatizar esse processo usando o golpe.
