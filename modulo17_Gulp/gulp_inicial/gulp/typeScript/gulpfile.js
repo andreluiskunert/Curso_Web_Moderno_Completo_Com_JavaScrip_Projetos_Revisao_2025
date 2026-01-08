@@ -8,4 +8,5 @@ function transformacaoTS(){
     .pipe(tsProject())
     .pipe(gulp.dest('build'))
 }
+
 exports.default = series(transformacaoTS)
