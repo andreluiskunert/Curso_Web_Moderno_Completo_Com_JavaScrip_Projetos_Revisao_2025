@@ -1,0 +1,259 @@
+Continuando agora a gente vai implementar a parte da Bíblia relacionada ao eco ponto de ns e para isso
+
+a gente vai precisar de vários impostos aqui certo.
+
+Então nós temos aqui algo grupo já eu vou precisar do Babel.
+
+Então vou colocar aqui Babel.
+
+Na verdade apesar do golpe.
+
+Graças a Deus vou duplicar isso.
+
+O próximo vai ser o Avaí vai usar aquela técnica ao selecionar a Babel Command D E VOU USAR AQUI ONDE
+
+ELE VAI VAI DAR certinho.
+
+Desse lado é golpe militar do outro ou duplicar.
+
+E nós vamos ter o SAS então não Command B SAS cobiçado do outro lado duplicar novamente o teu vai ser
+
+assim.
+
+Assim como de D.
+
+Ele FAI CSS no lado lúgubre traço dele vai ser SS do outro ou duplicar que eu vou selecionar aqui né.
+
+Catch outro lado B com Kati MAIS UMA VEZ VOU duplicar e vai ter o HTML L que foi a primeira vez que
+
+a gente vai usar HTML em algum traço HTML então tem 1 2 3 4 5 6 7 Portes 1 2 3 4 5 6 7 importe exatamente
+
+como está no planejamento estão lá colocando aqui nós vamos definir pra começar do ponto SRC agora vou
+
+trabalhar com a parte de HTML e como é que a gente faz pra selecionar os HTML dentro da minha aplicação.
+
+Então não tem apenas um link HTML.
+
+Tem vários embora tenha uns 5 ou seja Application.
+
+Os outros trechos de HTML vão ser carregados a partir do Ajax então vou usar aqui SC Barra asterisco
+
+asterisco Barra asterisco ponto HTML.
+
+Isso basicamente que eu vou querer fazer com o HTML vai ser minha ficar no HTML e vou querer jogar.
+
+Eu usei HTML unificados dentro da pasta bio algo colocar aqui o PayPal seguindo a mesma estrutura que
+
+estava na nossa aplicação.
+
+Então outro ponto PayPal aqui eu vou passar o nosso HTML em HTML.
+
+O parâmetro que eu vou passar para HTML mini vai ser dentro de objeto.
+
+Vai ser o colapso dos preços seja pra ele tirar os espaços brancos eu vou colocar isso pra ser verdadeiro
+
+e o próximo passo aqui no nosso Pai Nosso workflow para o HTML vai ser jogar Buck d'Este eu vou jogar
+
+isso pra dentro da pasta de biologia hoje seria seguir na mesma estrutura que estava na raiz do SC canais
+
+do Bild que estava dentro da pasta paginas vai também ficar dentro da pasta paginas do Bild.
+
+Então só pra gente ver aqui no nosso site se a gente tinha uma pasta com páginas e o endereço diretamente
+
+dentro do SS para a gente testar a primeira parte não estava funcionando.
+
+Ou daqui bobinho ele vai agora executar aqui o nosso Web HTML e se a gente olhar no Bild agora além
+
+de ter os acentos nós temos um index ponto HTML.
+
+Olhando ainda é que a gente vai ter o arquivo minha ficaram um aninho só diferente do que estavam em
+
+desenvolvimento e nas páginas a gente vai ter todas as páginas em uma única linha também para ter o
+
+menor possível.
+
+Na hora que for feita a requisição.
+
+Economizar banda do usuário.
+
+Pronto o próximo passo agora é trabalhar com o CSS a gente já tinha trabalhado com CSS eu vou tirar
+
+até 5 ou beque que vou também tirar essa couber que a gente já tinha trabalhado com CSS como sabem que
+
+fez um exemplo e especificamente sobre isso no nosso capitulo se você quiser pausar a aula e tentar
+
+fazer como desafio pode ser também algo interessante aqui nós vamos começar a partir do golpe ponto
+
+SRC e nós vamos referenciar o nosso arquivo principal no que diz respeito ao SAS então só olhar aqui
+
+aceites entrar aqui nós temos um arquivo ainda irresponsáveis.
+
+Você pode ir pra copiar o caminho relativo ou fechar aqui e voltar dentro do meu Bild o caminho relativo.
+
+Tirando essa parte do bug que vai ser esse aí ser aceites SAS Index ponto SS SS não tem errado desse
+
+jeito porque você copiando o caminho relativo fica fácil então uma vez que eu tenho esse arquivo eu
+
+vou fazer um pïœblico chamando o SAS.
+
+Você já concatenar aqui um erro.
+
+Caso aconteça o erro eu vou chamá lo.
+
+Da mesma forma que a gente fez ponto logo que erro saiu logo na sequência depois do SAS foi processado
+
+por chamar que o foi CSS passando um objeto aqui eu vou colocar ele vai na verdade homens dois pontos.
+
+Vou colocar aqui como sendo verdadeiro.
+
+Eu não quero que os meus comentários fiquem no arquivo final.
+
+Vou chamar o pai novamente.
+
+Depois ele foi colocá lo com cash.
+
+Então com Kate para concatenar todos os meus arquivos em um só eu vou chamar o arquivo de APP.
+
+Ponto como CSS.
+
+Outro ponto CSS finalmente chamado aqui o pai depois com Kate para a gente jogar na parte de destino.
+
+Eu vou colocar aqui o ponto d'Este e aqui nós vamos definir o de barra brava aceites Barra CSS para
+
+a gente ver se está a funcionar no primeiro eu peguei o arquivo principal do meu SAS naquela SS e assim
+
+pedi para ele processar o arquivo não pré processador para gerar o CSS.
+
+Coloquei aqui.
+
+Se tiver algum erro ele vai mostrar um login.
+
+Você a uma variável que não existe e tal então é útil também isso colocar aqui ou ali vai ele vai ficar
+
+no CSS e vai jogar tudo aquilo só e no final vai jogar nessa paixão e destino.
+
+Então não importa que executando mais uma vez a gente deu resultado na nossa pasta Bio.
+
+Agora dentro de ácidos a gente vai ter também a parte do CSS.
+
+Já tinham DAP ponto em pontos CSS agora a gente tem web e ponto em ponto CSS também um arquivo unificado
+
+de uma única linha.
+
+Então nós temos dois arquivos na nossa aplicação esses dois arquivos são referenciados até mostrar aqui
+
+no desporto HTML.
+
+Esses dois arquivos são referenciados no nosso código aceitos pontos CSS ponto absoluto em CSS e aceitos
+
+pontos CSS e API ponto em ponto CSS.
+
+Eu vim aqui e pedi para abri esse arquivo já na pasta de destino na pasta Bild.
+
+Se eu colocar aqui no Bild e colocar pra revelar ao clicar aqui duas vezes você já vai ver a nossa aplicação
+
+já está funcionando parcialmente.
+
+Já tem 1 700 funcionando e tal a caixa na navegação e não funciona.
+
+Primeiro porque o seu o nosso JavaScript ainda não foi processado e segundo porque ele vai precisar
+
+de um servidor pra funcionar.
+
+Na requisição Ajax eu vou achar pra vocês estão fechando aqui.
+
+Voltando pro nosso Bild digo fechar aqui invocando que nosso ponto de S.
+
+O próximo passo vai ser Apache do JavaScript Apache do JavaScript também já trabalhou.
+
+Então eu vou tirar aqui essa couber aqui.
+
+Também não vou precisava couber aqui vou colocar um grupinho.
+
+Ponto.
+
+SC vamos selecionar todos os arquivos Javascript da nossa aplicação que estão em SC Barra aceites são
+
+aceitos Barra de S e aqui eu vou colocar a barra asterisco asterisco Barra asterisco pouco ou sejam
+
+arquivos que estejam diretos dentro da pasta CSS ou em sua pastas eram considerados pra entrar nesse
+
+workflow aqui certo relacionado ao novo CSS.
+
+Um ponto aqui.
+
+Nós vamos definir o primeiro vai ser o Babel eu vou colocar Babel usando o pré.
+
+Então coloca aqui um objeto usado pra 7.
+
+Vi que a gente estava usando certo que é o mais novo e não especificamente se esse sei lá Ué como um
+
+script de 2020 ou 2019 auto pegando a versão mais nova.
+
+O próximo passo é o pai.
+
+Nós vamos colocar aqui o O.
+
+Então vou chamar wifi sem nenhum parâmetro.
+
+O próximo passo que eu vou chamar com Cat pra concatenar isso dentro de E.ON ponto.
+
+Meu ponto é esse.
+
+E finalmente eu vou jogar o resultado IP para Apache e destino.
+
+Eu vou colocar aqui Bobby ponto deste destino.
+
+Vou colocar aqui pra ele entrar na pasta Biu Ji Barra aceites Barra de S.
+
+O resultado vai ser jogado nessa pasta.
+
+Então a gente não tinha JavaScript na parte de dependências.
+
+Agora ele vai criar pela primeira vez a pasta dentro de aceites relacionados a JavaScript já tem CSS
+
+e fontes pouco terminal Galp ele vai gerar mais uma pasta que é relacionada ao JavaScript da minha aplicação
+
+web e ponto me empolguei esta manhã minha ficado na única linha pronto para a produção e por último
+
+para a gente terminar que o brinde à nossa aplicação tem a partir das imagens a parte das imagens também.
+
+Só vou fazer a cópia das imagens pra dentro da pasta build também vai ser muito simples se você quiser
+
+pausar e tentar.
+
+Também sou bem tranquilo.
+
+é sempre bom.
+
+Quanto mais desafios vocês fizerem durante o curso melhor vai sim.
+
+Então vou pegar aqui.
+
+Nem sempre eu preciso anunciar o desafio.
+
+Se você acha que eu consigo fazer isso pausar e tentar fazer ou pelo menos imaginar como seria um golpe
+
+muito SC.
+
+Aqui eu vou passar as nossas imagens vai tá em SC Barra aceites Barra e MX imagens Barra asterisco asterisco
+
+Barra asterisco ponto asterisco se eu tiver uma imagem por exemplo PNG JPG ou qualquer outra imagem
+
+que figura apagar todas as imagens e jogar para baixo de destino então fazer um pit passando golpe em
+
+que ponto deixo aqui eu vou colocar o Bild em Barra aceites Barra e MGS mesmo nome e imagens tudo o
+
+que tiverem imagens no seu código fonte ele vai jogar para dentro do Bild também.
+
+Então salvando agora a gente finalizou mais uma baixa ao rodar o Ruby você vai ver que mais uma pastinha
+
+dentro de acentos vai ser criada no Bild am nós temos acesso às fontes a imagem e o nosso dia também
+
+aqui é tudo pronto pra que possa ser referenciado pela nossa aplicação.
+
+Com isso nós terminamos aqui o Bild e a nossa aplicação é na próxima aula nós vamos implementar o servidor
+
+então fique por aqui na posse além da parte final do nosso Bild.
+
+Na nossa aplicação a esperar e até lá.
