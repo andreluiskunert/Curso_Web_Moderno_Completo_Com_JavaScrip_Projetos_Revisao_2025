@@ -1,6 +1,9 @@
-export default class Pessoa {
+ import './modulos/moduloA'
+
+export default  class Pessoa {
     cumprimentar(){
         return 'Boa noite'
-        // continuar amanhã
+        // continuar amanhã à tarde
+        // Sabado,17/01/2026_à tarde
     }
 }
