@@ -1,0 +1,235 @@
+Agora nós vamos fazer a última parte do nosso bio na nossa aplicação esperar exatamente configurando
+
+aqui o servidor primeiro para configurar o servidor depois a gente vai configurar a questão de ficar
+
+monitorando os arquivos então para configurar o servidor.
+
+Eu vou começar aqui é Copy ponto a série C então o ponto C ele vai ficar olhando para a pasta onde vai
+
+ser a pasta usada no servidor e logo na sequência eu vou concatenar aqui com o pai que eu vou precisar
+
+importar o grupo observa.
+
+Então vou colocar aqui quais quais.
+
+A gente tem como completar o traço.
+
+Observem eu vou chamar que ele serve apenas colocar aquele constante de certo serve isso.
+
+E nós vamos usar que o papo é o primeiro eu selecionei a pasta build e logo na sequência vou usar um
+
+papo com Hebe Sérvia passando as configurações do nosso servidor ou seja qual vai ser a porta que ele
+
+vai usar coisas do tipo como colocar aquela porta.
+
+Eu sei que vai usar colocar na porta 80 80.
+
+A segunda opção que eu vou usar vai ser se eu quero que ele abra o Brasil eu vou colocar pra ser verdadeiro
+
+esse eu quero que ele faça o lay Launch ilustra bem eu queria colocar para ser verdadeiro.
+
+Então com essas três opções agora vocês vão perceber que o bigode vai ser um pouquinho diferente porque
+
+ele não vai terminar como qualquer golpe.
+
+Ele vai executar o Bild a nossa aplicação vai ficar abril o servidor vai ficar a porta 80 80 então ele
+
+já saiu.
+
+Aqui ele executou o Bild continua rodando exatamente ele abriu o servidor agora trazendo na nossa aplicação
+
+como a nossa aplicação agora está rodando no servidor.
+
+Eu tenho um comando chamado Ajax alterado e as informações vão mudando porque agora ele consegue fazer
+
+as aquisições e Ajax a nossa aplicação está rodando aqui na porta 80 80.
+
+O que está faltando agora é o que a gente entrar por exemplo nosso código fonte.
+
+Eu não me preocupo muito com o que está dentro do Bild Bild que vai gerar o clube o grupo está jogando
+
+para além do Bild.
+
+Certo também não me preocupo muito com o que testes até porque eu vou gerar isso uma única vez e vai
+
+ficar sendo usado na aplicação que eu vou mexer mesmo aqui dentro da minha aplicação aqui dentro.
+
+Sei sei.
+
+Então eu quero chegar por exemplo na página de início e colocar por exemplo aqui início 2 ou sei lá
+
+o homem por exemplo da capa.
+
+Quero colocar algo de início quero colocar no momento que ele salvar.
+
+Eu quero que automaticamente ele vá alterar essa informação que ainda continua início mas eu queria
+
+que fosse mobile então era para ele fazer o relógio automaticamente certo o que é que nós vamos fazer.
+
+Eu vou entrar aqui em seguida ao ponto de Hesse onde tem monitor arquivo.
+
+Nós vamos agora fazer essa mudança então vou chamar o CB aqui no final e vou usar um ao outro e um outro
+
+importe aqui constante.
+
+Então eu vou chamar de Bolt e eu vou pegar a Highway.
+
+E vai ser o golpe traço forte e nós vamos usar esse ódio para ficar monitorando os arquivos e sempre
+
+que houver mudança em determinados tipos de arquivos ele vai gerar vai chamar onde está escrito Eu vou
+
+mostrar pra vocês Como é que faz isso.
+
+Eu vou chamar aqui o Word dentro do lote A primeira coisa que eu vou dizer o que é que eu quero monitorá
+
+onde é que eu quero monitorar o quero monitorar não a pasta Bild eu quero monitorar parte do meu código
+
+fonte.
+
+Ou seja eu vou mudar o código fonte e ele vai disparar um Bild que vai gerar a minha aplicação não Bild
+
+inteiro mais a parte que foi mudada se eu mudei só HTML não precisa mudar JavaScript.
+
+Eu mudei se olharmos clubes eu não preciso mudar o HTML.
+
+Então aqui eu vou colocá lo.
+
+SC Barra asterisco asterisco Barra asterisco ponto HTML.
+
+Ou seja se esse arquivo mudar eu vou querer chamar uma função que eu vou colocar aqui uma função é essa
+
+função vai chamar o teste do golpe.
+
+Como é que eu faço para chamar a técnica do golpe.
+
+E aqui eu vou fazer o seguinte algum ponto.
+
+CIOs vou chamar.
+
+Eu posso chamar uma tese que a partir do nome dela.
+
+Então no caso do HTML se a gente olhar lá na web ponto de S.
+
+Na nossa tese que é HTML então eu vou chamar essa tese que aqui é Java vou invocar aqui a função para
+
+ele de fato disparar e chamar essa técnica de sempre que alterar o HTML.
+
+Eu vou essa função para que ele possa gerar os novos HTML então vou parar aqui o nosso humilde olhar
+
+para que a aplicação só está funcionando por enquanto o altíssimo de HTML a gente vai testar agora pra
+
+ver se está funcionando então ele vai gerar aplicação abriu aqui a página Meu outro monitor.
+
+Com esse problema aqui ele está mostrando como sendo Rumi eu vou voltar aqui até colocar pra vir pra
+
+cá.
+
+Beleza eu sei que baba acaba abrindo um novo né.
+
+Eu vou voltar lá no meu ponto HTML voltar aqui pra início.
+
+Início salvei.
+
+E aí ele deu um problema dizendo que é em HTML.
+
+é uma tese que não definida.
+
+Uma das coisas que a gente pode fazer aqui ou lá no nosso país outro dia é definir o nome das teses
+
+da seguinte forma a gente pode usar o Ruby antes de importar e fazer o seguinte ao golpe ponto a tese
+
+que a gente pode dar um nome pra ela é por conta HTML vai apontar pra essa função HTML e assim você
+
+consegue registrar uma tese que dessa forma como você usa o CIO n é o paralelo C não necessariamente
+
+precisa registrar mais esse caso como eu vou usar parte do nome eu preciso registrar e eu posso fazer
+
+esse primeiro HTML.
+
+Pouca gente completa para resto daqui com você vou limpar executar o vídeo novamente abri novamente
+
+o Brasil em abril de novo aqui na minha outra tela sem problema.
+
+Achei voltar pra cá ou fechar isso aqui vou deixar essa outra aqui e vou fazer essa outra apela pra
+
+cá.
+
+Pronto aqui nós temos o inicio conforme era esperado.
+
+Se eu entrar aqui no início e se colocar aqui pra ser bom você vai ver o que vai salvar o Bild.
+
+Vai executar de novo e a gente vai ter o nome que eu colocar por exemplo Mi 2 salvando ele vai gerar
+
+novamente o que ele viu que teria mudança na HTML e chamou o HTML aqui e gerou milhoes de vocês dessa
+
+forma a gente consegue ter um ciclo de desenvolvimento muito legal voltar até tirar essa tela aqui em
+
+tela cheia pra gente o acontece na prática que algo diminui um pouco nossa aplicação.
+
+Ele tem um nível de responsabilidade legal que eu vou salvar aqui só pra gente administrar um pouquinho
+
+mais e até em cima de mim não tá no topo da tela beleza não sabe quando é que você vai ver que ele errou
+
+ou ele mesmo download automático sem necessariamente precisarem poupar muito ao início salvando ele
+
+vai lá dar um relógio na aplicação e mostra a versão mais nova sede nem mesmo ilude você precisa se
+
+preocupar uma vez que você está trabalhando com essa configuração que estou mostrando pra vocês.
+
+O próximo passo que nós vamos fazer aqui vai ser dentro de poucos dias.
+
+Eu vou gerar aqui registar outros testes então registrar a imagem e já está aqui na mão ou registrar
+
+outra e aí é assim e também tem de capacho de CSS na Itália tem um CSS e aqui também tem CSS.
+
+De tal forma que uma vez registrado essas técnicas aqui lá no meu servidor eu consigo gerar outras chamadas
+
+aqui pra qualquer mudança em Arquivo e sim CSS.
+
+Aí você vai chamar o pin CSS qualquer mudança no meu arquivo e assim por exemplo eu vou chamar o app
+
+DS e qualquer mudança que tiver nas imagens SC aqui eu boto Barra aceites Barra Mendes Barra meiguice
+
+asterisco bota asterisco asterisco ponto asterisco né.
+
+E aqui seria HTML e CSS DS e aqui qualquer coisa que estiver dentro de margem do alterando eu vou chamar
+
+o meu Apple é mais e pronto.
+
+Dessa forma a gente consegue monitorar os arquivos certo por tipo e sempre que um arquivo de determinado
+
+tipo muda ele vai chamar a tese que correta pra fazer as alterações eu não vou ficar monitorou nós da
+
+PNS porque não faz muito sentido a gente monitorar as dependências mais monitorar assim os nossos arquivos
+
+da aplicação.
+
+Então pessoal definimos aqui só para a gente finalizar e realmente fazer o último vídeo da aplicação.
+
+Eu vou até fechar aqui.
+
+é o exemplo passado.
+
+Vou fechar isso aqui a gente vai fazer o último replay e a gente tem aqui uma versão muito legal né
+
+com o monitoramento dos arquivos atualizando o Bráulio Z.
+
+Esse automaticamente ele muda para a aplicação funcionando usando a última versão do Go que meu grupo
+
+é 4 muito legal fazer a última mudança só para testar ao início eu vou chamar aqui vou me salvar.
+
+Ele deu Refresh e automaticamente já trouxe aqui pra mim sem precisar mudar absolutamente nada.
+
+Voltando pra inicio salvando ele me chamou aqui ao app poupa HTML e a gente tem início no gibi então
+
+pessoal é isso que achamos pra fazer muita coisa legal que nós vimos nesse exercício vimos muitos recursos
+
+legais do golpe e fico por aqui no nosso projeto tinha um final relacionado à nossa aplicação SP construindo
+
+um bigode bem mais complexo bem mais interessante e a gente deu pra pegar tudo aquilo que a gente já
+
+aprendeu no capítulo e aplicar na prática.
+
+Um cenário bem mais realista na próxima aula a gente é a última aula do nosso capitão só pra fazer um
+
+fechamento e espero lá.
