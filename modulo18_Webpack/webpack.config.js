@@ -21,7 +21,7 @@
 //     }
 // }
 const path = require('path')
-
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
   mode: 'production',
   entry: './src/principal.js',
@@ -29,12 +29,19 @@ module.exports = {
     filename: 'principal.js',
     path: path.resolve(__dirname, 'public')
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: "estilo.css",
+
+    })
+  ],
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
+          // 'style-loader', 
           'css-loader'
         ]
       }
