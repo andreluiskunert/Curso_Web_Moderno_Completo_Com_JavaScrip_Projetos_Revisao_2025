@@ -1,1 +1,0 @@
-(()=>{var o={933(o,r,s){const t=s(980);console.log(t.saudacao())},980(o){o.exports={saudacao:()=>"Olá sou o módulo B!!!"}}},r={};function s(t){var e=r[t];if(void 0!==e)return e.exports;var a=r[t]={exports:{}};return o[t](a,a.exports,s),a.exports}(()=>{"use strict";s(933);const o=new class{cumprimentar(){return"Boa noite"}};console.log(o.cumprimentar())})()})();
