@@ -9,13 +9,34 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modulos/moduloA.js"
+/*!********************************!*\
+  !*** ./src/modulos/moduloA.js ***!
+  \********************************/
+(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+eval("{const moduloB = __webpack_require__(/*! ./moduloB */ \"./src/modulos/moduloB.js\")\n// import moduloB from \"./moduloB\";\n\nconsole.log(moduloB.saudacao())\n\n//# sourceURL=webpack://modulo18_webpack/./src/modulos/moduloA.js?\n}");
+
+/***/ },
+
+/***/ "./src/modulos/moduloB.js"
+/*!********************************!*\
+  !*** ./src/modulos/moduloB.js ***!
+  \********************************/
+(module) {
+
+eval("{module.exports = {\n    saudacao() {\n        return 'Olá, seja bem vindo ao curso de Webpack'\n    }\n}\n\n//# sourceURL=webpack://modulo18_webpack/./src/modulos/moduloB.js?\n}");
+
+/***/ },
+
 /***/ "./src/pessoa.js"
 /*!***********************!*\
   !*** ./src/pessoa.js ***!
   \***********************/
-(module) {
+(module, __webpack_exports__, __webpack_require__) {
 
-eval("{// export default \nmodule.exports = class Pessoa {\n    cumprimentar(){\n        return 'Boa  noite'\n    }\n}\n\n//# sourceURL=webpack://modulo18_webpack/./src/pessoa.js?\n}");
+"use strict";
+eval("{__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_moduloA__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/moduloA */ \"./src/modulos/moduloA.js\");\n/* harmony import */ var _modulos_moduloA__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modulos_moduloA__WEBPACK_IMPORTED_MODULE_0__);\n/* module decorator */ module = __webpack_require__.hmd(module);\n// export default \n\nmodule.exports = class Pessoa {\n    cumprimentar(){\n        return 'Boa  noite'\n    }\n}\n\n//# sourceURL=webpack://modulo18_webpack/./src/pessoa.js?\n}");
 
 /***/ },
 
@@ -49,17 +70,76 @@ eval("{const Pessoa = __webpack_require__(/*! ./pessoa */ \"./src/pessoa.js\");\
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/harmony module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.hmd = (module) => {
+/******/ 			module = Object.create(module);
+/******/ 			if (!module.children) module.children = [];
+/******/ 			Object.defineProperty(module, 'exports', {
+/******/ 				enumerable: true,
+/******/ 				set: () => {
+/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
+/******/ 				}
+/******/ 			});
+/******/ 			return module;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
 /******/ 	
 /************************************************************************/
 /******/ 	
