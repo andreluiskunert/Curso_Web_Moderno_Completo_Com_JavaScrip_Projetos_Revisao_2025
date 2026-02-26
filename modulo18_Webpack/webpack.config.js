@@ -1,8 +1,11 @@
+const modoDev= process.env.NODE_ENV !== 'production'
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const UglifyJsPluigin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optiomize-css-assets-webpack-plugin')
 
 module.exports = {
-    mode: 'development',
+    mode: modoDev ? 'development' : 'production',
     entry: './src/principal.js',
     // segunda-feira, 23/02/2026
     output: {
