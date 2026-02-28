@@ -2,7 +2,6 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { use } = require('react');
 
 const modoDev = process.env.NODE_ENV !== 'production';
 
@@ -18,6 +17,14 @@ module.exports = {
 
   devtool: modoDev ? 'source-map' : false,
 
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'public'),
+    },
+    port: 9000,
+    open: true,
+  },
+
   module: {
     rules: [
       {
@@ -26,11 +33,8 @@ module.exports = {
           modoDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
         ],
-      }, 
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] ,
-        use:  ['file-loader']
-      }
-    ]
+      },
+    ],
   },
 
   plugins: [
@@ -41,5 +45,4 @@ module.exports = {
     minimize: !modoDev,
     minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
   },
-  
 };
