@@ -1,8 +1,10 @@
-const modoDev = process.env.NODE_ENV !== 'production'
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const TerserPlugin = require('terser-webpack-plugin')
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const { use } = require('react');
+
+const modoDev = process.env.NODE_ENV !== 'production';
 
 module.exports = {
   mode: modoDev ? 'development' : 'production',
@@ -10,38 +12,34 @@ module.exports = {
 
   output: {
     filename: 'principal.js',
-    path: __dirname + '/public',
+    path: path.resolve(__dirname, 'public'),
+    clean: true,
   },
 
-  optimization: {
-    minimize: !modoDev,
-    minimizer: [
-      new TerserPlugin({ parallel: true }),
-      new CssMinimizerPlugin(),
-    ],
-  },
-      new TerserPlugin({
-        parallel: true,
-        terserOptions: {
-            ecma: 6,
-        },
-    }),
-
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'estilo.css',
-    }),
-  ],
+  devtool: modoDev ? 'source-map' : false,
 
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+          modoDev ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
         ],
-      },
-    ],
+      }, 
+      { test: /\.css$/, use: ['style-loader', 'css-loader'] ,
+        use:  ['file-loader']
+      }
+    ]
   },
-}
+
+  plugins: [
+    ...(modoDev ? [] : [new MiniCssExtractPlugin({ filename: 'estilo.css' })]),
+  ],
+
+  optimization: {
+    minimize: !modoDev,
+    minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
+  },
+  
+};

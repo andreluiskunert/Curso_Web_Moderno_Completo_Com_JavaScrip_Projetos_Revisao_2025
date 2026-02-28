@@ -1,5 +1,9 @@
 body{
     background-color: blue;
+    background-image: url(../imags/meulogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
 marquee{
     color: white;
