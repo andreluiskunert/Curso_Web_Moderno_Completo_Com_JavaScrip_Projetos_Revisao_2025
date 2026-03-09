@@ -13,7 +13,8 @@
     <div id='conteudo'></div>
 
     <script>
-        const pessoas = [
+        $(function() {
+        const alunos = [
             { nome: 'Ana', nota: 9.1 },
             { nome: 'Bianca', nota: 8.4 },
             { nome: 'Carlos', nota: 7.6 },
@@ -26,14 +27,14 @@
 // ===============================
 
 // Objetivo:
-// Criar uma tabela HTML a partir de um array de pessoas.
+// Criar uma tabela HTML a partir de um array de alunos.
 
 // O que o array possui:
 // - nome
 // - nota
 
 // O que deve ser feito:
-// 1. Percorrer o array de pessoas.
+// 1. Percorrer o array de alunos.
 // 2. Criar uma tabela dinamicamente no HTML.
 // 3. Cada pessoa deve gerar uma linha (tr).
 // 4. Cada linha deve ter duas colunas (td):
@@ -56,7 +57,18 @@
 // 5. Inserir a tabela dentro da div no HTML.
 
 // Na próxima aula será apresentada a solução.
-
+// =====
+// Domingo,08/03/2026_De noite
+const linhas = alunos.map(aluno =>{
+    const tdNome = $('<td>').html(aluno.nome)
+    const tdNota = $('<td>').html(aluno.nota)
+    // return $('<tr>').append(tdNome).append(tdNota)
+    return $('<tr>').append(tdNome, tdNota) // usa mais...
+})
+ const tabela = $('<table>').append(linhas)
+    .css('border', 'solid 5px')
+$('#conteudo').append(tabela)
+})
 
     </script>
 </body>
