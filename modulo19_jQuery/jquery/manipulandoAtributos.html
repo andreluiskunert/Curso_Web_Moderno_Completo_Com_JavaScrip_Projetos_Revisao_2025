@@ -22,6 +22,8 @@
 <body class='conteudo exercicio'>
     <h1>Manipulando Atributos</h1>
     <div wm-relogio='1000'></div>
+     <div wm-relogio='2000'></div>
+      <div wm-relogio='3000'></div>
     <script>
         // Domingo,08/03/2026_De noite
         //  explica como será...
@@ -45,7 +47,12 @@
             const alterarIntervalo = delta =>{
                 const novo = Math.max(getIntervaloAtual() + delta, 1000)
                 $elemento.attr('wm-relogio', novo) // amanha continuo....
+                //  Terça-feira,10/03/2026_De noite
+                iniciar()
             }
+            botaoMenos.click(e =>alterarIntervalo(1000))
+            botaoMais.click(e => alterarIntervalo(-1000))
+            iniciar()
 
         }
         $('[wm-relogio]').each((i, e) => new Relogio(e))
