@@ -20,6 +20,23 @@
     <input type="text" placeholder="Cor de Background">
 
     <script>
-        // ...
+        // ... Quarta-feira, 11/03/2026_1ªParte 
+        // Obs.: tive reiniciar o not... 
+        function mostrarPosicaoMouse(e){
+            $('#posicao').html(`x:${e.clientX} y:${e.clientY}`)
+        }
+        $('body').on('mousemove', mostrarPosicaoMouse)
+        $('#posicao').mouseover(e => {
+             $('body').off('mousemove', mostrarPosicaoMouse)
+        })
+          $('#posicao').mouseleave(e => {
+             $('body').mousemove (mostrarPosicaoMouse)
+        })
+        let cliques = 0 
+         $('body').click(e => {
+            $('#cliques').html(`Cliques: ${++cliques}`)
+         })
+        const backgroundOriginal = $('body').css('background-color')  // manter cor orginal do sistema
+        //  fazer o restante amanha de noite
     </script>
 </body>
