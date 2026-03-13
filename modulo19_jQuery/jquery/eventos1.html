@@ -38,5 +38,17 @@
          })
         const backgroundOriginal = $('body').css('background-color')  // manter cor orginal do sistema
         //  fazer o restante amanha de noite
+        // Quinta-feira,12/03/2026_De noite
+        $('input').keyup(function(e){
+            // console.log(e.target.value)
+            const valor = $(this).val()
+            // console.log(valor)
+            if(valor.match(/#[\da-fA-F]{3,6}/)){
+                $('body').css('background-color', valor)
+            } else {
+                $('body').css('background-color', backgroundOriginal)
+            }
+        })
+        
     </script>
 </body>
