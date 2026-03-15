@@ -23,6 +23,22 @@
     <div id='animar'>Animar!</div>
 
     <script>        
-        // ...
+        // ... sabado,14/03/2026_De noite
+        // § explicar...
+        $('button').click(e => {
+            // cuidado com o uso do "THIS"
+            const t = 1500;
+            // $('#animar').hide(t).show(t)
+            $('#animar').Toggle(t).Toggle(t)
+            // $('#animar').fadeOut(t).fadeIn(t)
+            $('#animar').fadeToggle(t).fadeToggle(t)
+            // $('#animar').slideUp(t).slideDow(t)
+               $('#animar').slideToggle(t).slideToggle(t)
+
+
+
+
+        })
+
     </script>
 </body>
