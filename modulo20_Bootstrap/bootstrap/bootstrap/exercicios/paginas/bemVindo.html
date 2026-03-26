@@ -1,1 +1,132 @@
-<!-- Título (jumbotron) -->
+
+  <h1>Explicação sobre Bootstrap</h1>
+
+  <!-- CSS do Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+</head>
+<body class="bg-light">
+
+  <div class="container py-5">
+    <h1 class="text-primary text-center mb-4">O que é Bootstrap?</h1>
+
+    <div class="card shadow p-4">
+      <p>
+        <strong>Bootstrap</strong> é um framework front-end que ajuda a criar
+        sites bonitos, organizados e responsivos de forma mais rápida.
+      </p>
+
+      <p>
+        Com ele, você não precisa escrever todo o CSS do zero, porque ele já
+        traz várias classes prontas para:
+      </p>
+
+      <ul>
+        <li>cores</li>
+        <li>botões</li>
+        <li>menus</li>
+        <li>formulários</li>
+        <li>tabelas</li>
+        <li>grid de colunas</li>
+        <li>responsividade</li>
+      </ul>
+    </div>
+
+    <div class="mt-4 card shadow p-4">
+      <h2 class="text-success">Como usar o Bootstrap?</h2>
+      <p>
+        Para usar o Bootstrap, basta colocar o link do CSS no
+        <code>&lt;head&gt;</code> do HTML.
+      </p>
+
+      <pre class="bg-dark text-white p-3 rounded">
+&lt;link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+&gt;
+      </pre>
+    </div>
+
+    <div class="mt-4 card shadow p-4">
+      <h2 class="text-danger">Exemplo de botão com Bootstrap</h2>
+      <p>O Bootstrap possui classes prontas para estilizar elementos.</p>
+
+      <button class="btn btn-primary">Botão Azul</button>
+      <button class="btn btn-success">Botão Verde</button>
+      <button class="btn btn-danger">Botão Vermelho</button>
+
+      <p class="mt-3">
+        Nesse exemplo:
+      </p>
+      <ul>
+        <li><code>btn</code> = define que é um botão do Bootstrap</li>
+        <li><code>btn-primary</code> = botão azul</li>
+        <li><code>btn-success</code> = botão verde</li>
+        <li><code>btn-danger</code> = botão vermelho</li>
+      </ul>
+    </div>
+
+    <div class="mt-4 card shadow p-4">
+      <h2 class="text-warning">Sistema de Grid</h2>
+      <p>
+        O Bootstrap trabalha com um sistema de 12 colunas para organizar o layout.
+      </p>
+
+      <div class="row text-center">
+        <div class="col-md-4 bg-primary text-white p-3">Coluna 1</div>
+        <div class="col-md-4 bg-success text-white p-3">Coluna 2</div>
+        <div class="col-md-4 bg-danger text-white p-3">Coluna 3</div>
+      </div>
+
+      <p class="mt-3">
+        Aqui:
+      </p>
+      <ul>
+        <li><code>row</code> = cria uma linha</li>
+        <li><code>col-md-4</code> = cria uma coluna ocupando 4 espaços de 12</li>
+      </ul>
+    </div>
+
+    <div class="mt-4 card shadow p-4">
+      <h2 class="text-info">Responsividade</h2>
+      <p>
+        Bootstrap ajuda o site a se adaptar em celular, tablet e computador.
+      </p>
+
+      <p>
+        Por exemplo:
+      </p>
+      <ul>
+        <li><code>col-12</code> = ocupa toda a largura no celular</li>
+        <li><code>col-md-6</code> = ocupa metade da largura em telas médias</li>
+        <li><code>col-lg-4</code> = ocupa 4 colunas em telas grandes</li>
+      </ul>
+    </div>
+
+    <div class="mt-4 card shadow p-4">
+      <h2 class="text-secondary">Vantagens do Bootstrap</h2>
+      <ul>
+        <li>Facilita a criação de páginas bonitas</li>
+        <li>Economiza tempo</li>
+        <li>Tem classes prontas</li>
+        <li>É responsivo</li>
+        <li>É muito usado no mercado</li>
+      </ul>
+    </div>
+
+    <div class="mt-4 card shadow p-4">
+      <h2 class="text-dark">Conclusão</h2>
+      <p>
+        Bootstrap é uma ferramenta muito útil para quem está aprendendo HTML,
+        CSS e desenvolvimento web. Ele permite criar interfaces modernas usando
+        classes prontas, deixando o código mais rápido de montar.
+      </p>
+    </div>
+  </div>
+
+  <!-- JS do Bootstrap -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
