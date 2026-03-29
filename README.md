@@ -1,44 +1,36 @@
 # 🚀 Curso Web Moderno Completo com JavaScript + Projetos
 
-Este repositório contém meus estudos, anotações e projetos desenvolvidos durante o curso:
-
-🔗 https://www.udemy.com/course/curso-web/
-
----
+Este repositório contém meus estudos, anotações e projetos desenvolvidos durante o curso **Curso Web Moderno Completo com JavaScript + Projetos**.
 
 ## 📚 Sobre o Curso
 
-O **Curso Web Moderno Completo com JavaScript + Projetos** é uma formação completa em desenvolvimento web, abordando desde os fundamentos até tecnologias modernas utilizadas no mercado.
+O curso oferece uma formação completa em desenvolvimento web, abordando desde os fundamentos da programação até tecnologias modernas utilizadas no mercado.
 
-O curso é composto por diversas seções, com centenas de aulas e dezenas de horas de conteúdo, cobrindo toda a base necessária para se tornar um desenvolvedor Full Stack. :contentReference[oaicite:0]{index=0}  
-
----
+Ao longo da jornada, são trabalhados conceitos essenciais para a construção de aplicações web completas, permitindo o desenvolvimento de habilidades práticas tanto no front-end quanto no back-end.
 
 ## 🎯 Objetivo
 
-O objetivo deste repositório é:
+Este repositório tem como objetivo:
 
 - Consolidar o aprendizado prático
-- Organizar projetos desenvolvidos durante o curso
-- Criar um portfólio para futura atuação profissional
+- Organizar exercícios, anotações e projetos
 - Servir como material de revisão
+- Apoiar a construção do meu portfólio profissional
 
----
+## 🧠 Tecnologias Estudadas
 
-## 🧠 Tecnologias Aprendidas
+Durante o curso, são exploradas diversas tecnologias e ferramentas importantes para o desenvolvimento web.
 
-Durante o curso, são abordadas diversas tecnologias modernas:
-
-### 🌐 Frontend
+### 🌐 Front-end
 - HTML5
-- CSS3 (Flexbox, Grid)
+- CSS3
 - JavaScript (ES6+)
 - Bootstrap
 - jQuery
 - React
 - Vue.js
 
-### ⚙️ Backend
+### ⚙️ Back-end
 - Node.js
 - Express
 - APIs REST
@@ -52,62 +44,50 @@ Durante o curso, são abordadas diversas tecnologias modernas:
 - Webpack
 - Gulp
 
----
+## 📦 Conteúdo Abordado
 
-## 📦 Conteúdo do Curso
-
-O curso é estruturado como um conjunto de vários módulos, incluindo:
+Entre os principais tópicos estudados no curso, estão:
 
 - Introdução ao desenvolvimento web
 - Fundamentos de programação
-- JavaScript completo (do básico ao avançado)
-- Programação funcional e orientação a objetos
-- Desenvolvimento frontend moderno
-- Desenvolvimento backend com Node.js
+- JavaScript do básico ao avançado
+- Programação funcional
+- Orientação a objetos
+- Desenvolvimento front-end moderno
+- Desenvolvimento back-end com Node.js
 - Integração com banco de dados
-- Criação de aplicações reais
-
-O curso é considerado um dos mais completos da área, cobrindo desenvolvimento web de ponta a ponta. :contentReference[oaicite:1]{index=1}  
-
----
+- Criação de aplicações práticas
 
 ## 💻 Projetos Desenvolvidos
 
-Alguns exemplos de projetos desenvolvidos durante o curso:
+Neste repositório, estão organizados exercícios e projetos desenvolvidos ao longo do curso, incluindo exemplos como:
 
-- ✅ Calculadora Web
-- ✅ Sistema CRUD
-- ✅ Aplicações com API REST
-- ✅ Projetos com React e Vue
-- ✅ Sistema Full Stack completo
-
----
+- Calculadora Web
+- Sistema CRUD
+- Aplicações com API REST
+- Projetos com React
+- Projetos com Vue.js
+- Aplicações Full Stack
 
 ## 📈 Habilidades Desenvolvidas
 
+Com os estudos deste curso, venho desenvolvendo habilidades como:
+
 - Lógica de programação
+- Estruturação de projetos web
 - Desenvolvimento Full Stack
 - Boas práticas de código
-- Estruturação de projetos reais
-- Versionamento com Git
-
----
+- Versionamento com Git e GitHub
 
 ## 🧑‍💻 Autor
 
 **André Luis Kunert**  
-🔗 GitHub: https://github.com/andreluiskunert  
-
----
+GitHub: [andreluiskunert](https://github.com/andreluiskunert)
 
 ## 📌 Observações
 
-Este repositório faz parte da minha jornada como desenvolvedor Full Stack, com foco em evolução contínua e preparação para o mercado de trabalho.
-
----
+Este repositório faz parte da minha jornada de aprendizado em desenvolvimento Full Stack, com foco em evolução contínua, prática constante e preparação para oportunidades na área de tecnologia.
 
 ## ⭐ Considerações Finais
 
-O curso oferece uma base sólida para quem deseja ingressar na área de desenvolvimento web, combinando teoria com prática através de projetos reais e tecnologias atuais do mercado.
-
----
+O curso tem sido uma importante base para ampliar meus conhecimentos em desenvolvimento web, combinando teoria e prática em projetos que contribuem para minha formação técnica e profissional.
