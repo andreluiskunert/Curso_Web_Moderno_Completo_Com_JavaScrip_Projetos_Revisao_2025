@@ -12,6 +12,10 @@
             .then(resp => resp.text())
             .then(html => {
                 destino.innerHTML = html
+    //               <!-- Quinta-feira,09/04/2026_De Noite -->
+    // // funcional
+    // $('[data-toggle="tooltip"]').tooltip()
+                // eval(html.match(/\<script\>([\s\S]*)<\script\>/)[1])   obs.: não foi necessário
             })
     }
 
